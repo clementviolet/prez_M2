@@ -1,0 +1,30 @@
+name: Create the pdf of the presnetation
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  dependencies:
+    name: Compile doc
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create the pdf
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: prez.tex
+          args: "-f -interaction=nonstopmode --file-line-error -lualatex"
+      - uses: actions/upload-artifact@v2
+        with:
+          name: pdf
+          path: ./prez.pdf
+      - name: Github PAges Deployment
+        if: always()
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          BUILD_DIR: .
+          GH_PAT: ${{ secrets.ACCESS_TOKEN }}
+
+
+        
