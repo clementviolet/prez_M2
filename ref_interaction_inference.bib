@@ -1,0 +1,2291 @@
+% Encoding: UTF-8
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+%% Created for aboye at 2020-01-13 17:10:03 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@article{Benedetti_Cecchi_2018,
+	Annote = {* Surlignement, page 1
+the analysis of ``big data'' in general, are largely correlative and cannot identify cause--effect relations with the same level of confidence offered by manipulative experiments.
+
+* Surlignement, page 1
+Observational studies, in contrast, can identify relationships among variables at spatial and temporal scales that are difficult or impossible to address experimentally.
+
+* Surlignement, page 2
+experimental data with large-scale observations can be used to increase the causal inferential strength and statistical power of joint species distribution models (jSDM). Experimentally derived effect sizes (e.g., species interaction strengths) can also be hybridized with species occurrence data to obtain a plot-level covariate to use in jSDM
+
+* Surlignement, page 2
+Hybridization is possible whenever observational data (spatial and temporal series) are available for variables whose causal relation has also been examined experimen- tally in the same environmental setting (e.g., same loca- tions).
+
+* Surlignement, page 2
+A further level of integration is possible by treating observations as covariates in the comparative experimental approach (Menge et al. 2002, Hewitt et al. 2007).
+
+* Surlignement, page 2
+A statistical relationship between observa- tional and experimental data can be established when identically designed experiments are distributed along relevant axes of environ- mental variation (e.g., latitudinal or elevational gradients) and ancil- lary data are collected to characterize the environment.
+
+* Surlignement, page 2
+This empirical dynamic modeling framework (EDM, Box 1) accommodates both the nonequilibrium dynamics and the nonlinearities typical of complex ecological systems.
+
+* Surlignement, page 2
+Hybrid datasets: short experimental time series of predictor and response variables can be joined with longer observational time ser- ies of the same variables and probed for causality using emerging techniques such as convergent cross-mapping (CCM; see Case study 1).
+
+* Surlignement, page 3
+Time series that share the same attractor are cau- sally linked, implying that each variable can identify the state of the other. For example, time series of two species that compete for a limited resource are dynamically linked and past values of abundance of one species can be recov- ered from time series of the other species. If one variable is a stochastic driver external to the system---for example, a cli- mate variable such as temperature regulating the abundance of a population---information about the state of the driver can be recovered from time series of population abundance, but the opposite is not possible. This counterintuitive asym- metry originates because only population abundance con- tains information about temperature, whereas the forcing variable does not depend on population abundance and so it contains no information about it (Sugihara et al. 2012).
+
+* Surlignement, page 3
+If causation is asymmetrical (e.g., temperature forcing population abundance, but not the reverse), forecasting skill will improve with time series length when cross-mapping from the response to the predictor, but not in the opposite direction
+
+* Surlignement, page 3
+The possibility of extending CCM to short, spatially replicated time series has opened the oppor- tunity for validation using data from field experiments (Clark et al. 2015).
+
+* Surlignement, page 3
+the nearest neighbors to a focal point on predictor manifold MX (white and black dots, respectively) are mapped to MY and used to predict the target value Y^ (t)| MX
+
+* Surlignement, page 4
+sional point X ðtÞ consists of the present value X(t) and the E1 previous values each separated by lag time s.
+
+* Surlignement, page 4
+The forecasting skill of CCM is assessed through cross-validation. The typical approach uses Pearson product--moment correlation to compare the target predictions Y^ (t)|MX to the actual values Y(t). This is repeated with increasing time ser- ies length, that is, the number of points used to reconstruct the manifolds MY and MX.
+
+* Surlignement, page 4
+Cross-validation is also used to select the optimal embedding dimension E. This requires assessing the forecasting skill for a set of E values (e.g., from 1 to 10) and selecting the embedding dimension on the basis of optimal prediction (Sugihara and May 1990).
+
+* Note ancr{\'e}e, page 4
+Cross-validation is also used to select the optimal embedding dimension E. This requires assessing the forecasting skill for a set of E values (e.g., from 1 to 10) and selecting the embedding dimension on the basis of optimal prediction (Sugihara and May 1990).
+
+Quel diff{\'e}rence entre E et la longueur de la s{\'e}rie temporelle ?
+
+* Surlignement, page 4
+convergence is a key prop- erty of CCM to distinguish between causation and correlation (Sugihara et al. 2012). In asymmetrical causation, forecasting skill will improve with time series length when cross-mapping from the response to the predictor, but not in the opposite direction.
+
+* Soulign{\'e}, page 4
+from the response to the predictor
+
+* Surlignement, page 4
+make_ccm_data function in the R library multispatialCCM (Clark et al. 2015). We used functions simplex and ccm in the rEDM package (Sugihara et al. 2012, Ye and Sugihara 2016) to perform CCM on scaled data, with best embedding dimension E set to 4 and 2 for species A and B, respectively, and the other arguments left to default values (further details including links to R code are provided in Appendix S1).
+
+* Soulign{\'e}, page 4
+The ideal setting is a field experiment where estimates of both manipulated (e.g., temperature) and response (e.g., population abundance) variables are available at the same location as part of observational time series and over periods encompassing the duration of the experiment.
+
+* Surlignement, page 4
+A key requirement for data hybridization is that both the observational and the experimental data originate from the same attractor manifold---that is they belong to the same dynamical system. The ideal setting is a field experiment where estimates of both manipulated (e.g., temperature) and response (e.g., population abundance) variables are available at the same location as part of observational time series and over periods encompassing the duration of the experiment
+
+* Surlignement, page 7
+In addition to clarifying the signal of causality, reconstructing the attractor from hybrid time ser- ies also improved the ability to forecast chl data compared to the analysis based on observations, as indicated by cross- validation (Pearson correlation coefficient: 0.789 for experi- mental data and 0.675 for observational data; see Appendix S1 for details).
+
+* Surlignement, page 7
+One approach (Path 1 in Fig. 4) simply consists of con- catenating experimental (treatments and controls) and observational data in a single dataset. This requires matching the observational and experimental data at the level of both the predictor and the response variables. That is, the covariates measured in the observational study should also be recorded in the experimental plots and manipulated factors should have corresponding observational values
+
+* Surlignement, page 7
+These results show how hybrid time series can increase the ability of CCM to identify a causal relation between a driver response variable and a biological response variable, com- pared to purely observational data.
+
+* Surlignement, page 7
+Joint species distribution models (jSDM) use a hierarchi- cal Bayesian framework to model species ensembles rather than one species at a time (Warton et al. 2015, Ovaskainen et al. 2017)
+
+* Surlignement, page 7
+Residual correlation matrices quantify networks of species co-occurrence after accounting for environmental filters, and these matrices can be further modeled as a function of species traits.
+
+* Surlignement, page 7
+jSDM allow the estimation of random effects to account for vari- ability at multiple hierarchical scales in space and time and variance partition methods can be used to determine the percentage of variation explained by fixed and random effects (Ovaskainen et al. 2017).
+
+* Surlignement, page 9
+We used the HMSC package in the R computational environment to fit a hierarchical Bayesian jSDM with spatiotemporal random effects (Ovaskainen et al. 2017).
+
+* Surlignement, page 9
+An assumption implicit to SDMs is that species are near equilibrium with their environment (Guisan and Thuiller 2005). Short-term snapshots of presence--absence or abun- dance data may violate this assumption, reflecting transient effects rather than long-term average conditions.
+
+* Note ancr{\'e}e, page 9
+An assumption implicit to SDMs is that species are near equilibrium with their environment (Guisan and Thuiller 2005). Short-term snapshots of presence--absence or abun- dance data may violate this assumption, reflecting transient effects rather than long-term average conditions.
+
+Probl{\`e}me pour utilisation HSMC dans herbier o{\`u} l'on suspecte une forte proportion d'esp{\`e}ces transientes
+
+},
+	Author = {Benedetti-Cecchi, Lisandro and Bulleri, Fabio and Dal Bello, Martina and Maggi, Elena and Ravaglioli, Chiara and Rindi, Luca},
+	Date-Added = {2020-01-13 17:09:54 +0100},
+	Date-Modified = {2020-01-13 17:10:03 +0100},
+	Doi = {10.1002/ecy.2504},
+	Issn = {0012-9658},
+	Journal = {Ecology},
+	Keywords = {Convergent-Cross Mapping},
+	Month = {Oct},
+	Number = {12},
+	Pages = {2654--2666},
+	Publisher = {Wiley},
+	Rating = {5},
+	Read = {1},
+	Title = {Hybrid datasets: integrating observations with experiments in the era of macroecology and big data},
+	Url = {http://dx.doi.org/10.1002/ecy.2504},
+	Volume = {99},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBPLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ0NNL0JlbmVkZXR0aS1DZWNjaGlfZXRfYWwtMjAxOC1FY29sb2d5LnBkZk8RAfIAAAAAAfIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9CZW5lZGV0dGktQ2VjY2hpX2UjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAFBERiAAAAAAAAMABAAACiBjdQAAAAAAAAAAAAAAAAADQ0NNAAACAGUvOlVzZXJzOmFib3llOkRvY3VtZW50czpCb3Vsb3Q6QmlibGlvZ3JhcGhpZTpTdGF0aXN0aXF1ZXM6Q0NNOkJlbmVkZXR0aS1DZWNjaGlfZXRfYWwtMjAxOC1FY29sb2d5LnBkZgAADgBQACcAQgBlAG4AZQBkAGUAdAB0AGkALQBDAGUAYwBjAGgAaQBfAGUAdABfAGEAbAAtADIAMAAxADgALQBFAGMAbwBsAG8AZwB5AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBjVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1N0YXRpc3RpcXVlcy9DQ00vQmVuZWRldHRpLUNlY2NoaV9ldF9hbC0yMDE4LUVjb2xvZ3kucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJAB2AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAmw=},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1002/ecy.2504}}
+
+@Article{Miele_2019,
+  author    = {Vincent Miele and Catherine Matias and St{\'{e}}phane Robin and St{\'{e}}phane Dray},
+  title     = {Nine quick tips for analyzing network data},
+  journal   = {{PLOS} Computational Biology},
+  year      = {2019},
+  editor    = {Francis Ouellette},
+  volume    = {15},
+  number    = {12},
+  month     = {dec},
+  pages     = {e1007434},
+  doi       = {10.1371/journal.pcbi.1007434},
+  url       = {https://doi.org/10.1371%2Fjournal.pcbi.1007434},
+  keywords  = {Network analysis},
+  publisher = {Public Library of Science ({PLoS})},
+}
+
+@article{Poisot_2014,
+	Author = {Poisot, Timoth{\'e}e and Stouffer, Daniel B. and Gravel, Dominique},
+	Date-Added = {2019-12-20 11:28:50 +0100},
+	Date-Modified = {2019-12-20 11:28:57 +0100},
+	Doi = {10.1111/oik.01719},
+	Issn = {0030-1299},
+	Journal = {Oikos},
+	Keywords = {Networks in ecology},
+	Month = {Nov},
+	Number = {3},
+	Pages = {243--251},
+	Publisher = {Wiley},
+	Title = {Beyond species: why ecological interaction networks vary through space and time},
+	Url = {http://dx.doi.org/10.1111/oik.01719},
+	Volume = {124},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxA0Li4vLi4vLi4vLi4vLi4vRG93bmxvYWRzL1BvaXNvdF9ldF9hbC0yMDE1LU9pa29zLnBkZk8RAXwAAAAAAXwAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////xtQb2lzb3RfZXRfYWwtMjAxNS1PaWtvcy5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAUAAgAACiBjdQAAAAAAAAAAAAAAAAAJRG93bmxvYWRzAAACADMvOlVzZXJzOmFib3llOkRvd25sb2FkczpQb2lzb3RfZXRfYWwtMjAxNS1PaWtvcy5wZGYAAA4AOAAbAFAAbwBpAHMAbwB0AF8AZQB0AF8AYQBsAC0AMgAwADEANQAtAE8AaQBrAG8AcwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMVVzZXJzL2Fib3llL0Rvd25sb2Fkcy9Qb2lzb3RfZXRfYWwtMjAxNS1PaWtvcy5wZGYAABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAFsAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAB2w==}}
+
+@article{Poisot_2016,
+	Author = {Poisot, Timoth{\'e}e and Stouffer, Daniel B. and K{\'e}fi, Sonia},
+	Date-Added = {2019-12-20 11:28:02 +0100},
+	Date-Modified = {2019-12-20 11:28:15 +0100},
+	Doi = {10.1111/1365-2435.12799},
+	Issn = {0269-8463},
+	Journal = {Functional Ecology},
+	Keywords = {Networks in ecology},
+	Month = {Dec},
+	Number = {12},
+	Pages = {1878--1882},
+	Publisher = {Wiley},
+	Title = {Describe, understand and predict: why do we need networks in ecology?},
+	Url = {http://dx.doi.org/10.1111/1365-2435.12799},
+	Volume = {30},
+	Year = {2016},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCKLi4vLi4vLi4vLi4vLi4vLi4vLi4vdmFyL2ZvbGRlcnMvZ3EvbXFjNmQwY2Qwd2IxY2h3bjlyc2d2bTBtMDAwMGdyL1QvY29tLmFwcGxlLlNhZmFyaS9XZWJLaXRQREZzLVNWQ0V0cy9Qb2lzb3QtMjAxNi1GdW5jLkVjb2wuLTMwLTE4NzgucGRmTxECJAAAAAACJAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H1BvaXNvdC0yMDE2LUZ1bmMuRSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAABwAJAAAKIGN1AAAAAAAAAAAAAAAAABFXZWJLaXRQREZzLVNWQ0V0cwAAAgB/Lzpwcml2YXRlOnZhcjpmb2xkZXJzOmdxOm1xYzZkMGNkMHdiMWNod245cnNndm0wbTAwMDBncjpUOmNvbS5hcHBsZS5TYWZhcmk6V2ViS2l0UERGcy1TVkNFdHM6UG9pc290LTIwMTYtRnVuYy5FY29sLi0zMC0xODc4LnBkZgAADgBGACIAUABvAGkAcwBvAHQALQAyADAAMQA2AC0ARgB1AG4AYwAuAEUAYwBvAGwALgAtADMAMAAtADEAOAA3ADgALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAH1wcml2YXRlL3Zhci9mb2xkZXJzL2dxL21xYzZkMGNkMHdiMWNod245cnNndm0wbTAwMDBnci9UL2NvbS5hcHBsZS5TYWZhcmkvV2ViS2l0UERGcy1TVkNFdHMvUG9pc290LTIwMTYtRnVuYy5FY29sLi0zMC0xODc4LnBkZgAAEwABLwD//wAAAAgADQAaACQAsQAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAALZ}}
+
+@Article{Tikhonov_2019a,
+  author    = {Gleb Tikhonov and Li Duan and Nerea Abrego and Graeme Newell and Matt White and David Dunson and Otso Ovaskainen},
+  title     = {Computationally efficient joint species distribution modeling of big spatial data},
+  journal   = {Ecology},
+  year      = {2019},
+  month     = {dec},
+  doi       = {10.1002/ecy.2929},
+  url       = {https://doi.org/10.1002%2Fecy.2929},
+  keywords  = {JSDM, Network inference},
+  publisher = {Wiley},
+}
+
+@Article{Flores_Moreno_2019,
+  author    = {Habacuc Flores-Moreno and Farideh Fazayeli and Arindam Banerjee and Abhirup Datta and Jens Kattge and Ethan E. Butler and Owen K. Atkin and Kirk Wythers and Ming Chen and Madhur Anand and Michael Bahn and Chaeho Byun and J. Hans C. Cornelissen and Joseph Craine and Andres Gonzalez-Melo and Wesley N. Hattingh and Steven Jansen and Nathan J. B. Kraft and Koen Kramer and Daniel C. Laughlin and Vanessa Minden and Ülo Niinemets and Vladimir Onipchenko and Josep Pe{\~{n}}uelas and Nadejda A. Soudzilovskaia and Rhiannon L. Dalrymple and Peter B. Reich},
+  title     = {Robustness of trait connections across environmental gradients and growth forms},
+  journal   = {Global Ecology and Biogeography},
+  year      = {2019},
+  editor    = {Andrew Kerkhoff},
+  volume    = {28},
+  number    = {12},
+  month     = {sep},
+  pages     = {1806--1826},
+  doi       = {10.1111/geb.12996},
+  url       = {https://doi.org/10.1111%2Fgeb.12996},
+  keywords  = {Functional trait, Trait networks, Network inference},
+  publisher = {Wiley},
+}
+
+@Article{D_Amen_2017,
+  author    = {Manuela D{\textquotesingle}Amen and Heidi K. Mod and Nicholas J. Gotelli and Antoine Guisan},
+  title     = {Disentangling biotic interactions, environmental filters, and dispersal limitation as drivers of species co-occurrence},
+  journal   = {Ecography},
+  year      = {2017},
+  volume    = {41},
+  number    = {8},
+  month     = {dec},
+  pages     = {1233--1244},
+  doi       = {10.1111/ecog.03148},
+  url       = {https://doi.org/10.1111%2Fecog.03148},
+  publisher = {Wiley},
+}
+
+@article{Keil_2019,
+	Author = {Keil, Petr and Wiegand, Thorsten and T{\'o}th, Anik{\'o} B. and McGlinn, Daniel J. and Chase, Jonathan M.},
+	Date-Added = {2019-12-09 10:35:42 +0100},
+	Date-Modified = {2019-12-09 10:35:42 +0100},
+	Doi = {10.32942/osf.io/7z8f9},
+	Journal = {EcoEvoRxiv},
+	Keywords = {Network inference, Networks in ecology},
+	Title = {Interspecific spatial associations as a facet of biodiversity, and a review of approaches to measure them},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBTLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UaGVvcmV0aWNhbCBlY29sb2d5L1NwZWNpZXMgaW50ZXJhY3Rpb25zL0tlaWxfSVNBX01lcmdlZC5wZGZPEQHiAAAAAAHiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8TS2VpbF9JU0FfTWVyZ2VkLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAAFFNwZWNpZXMgaW50ZXJhY3Rpb25zAAIAaS86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlRoZW9yZXRpY2FsIGVjb2xvZ3k6U3BlY2llcyBpbnRlcmFjdGlvbnM6S2VpbF9JU0FfTWVyZ2VkLnBkZgAADgAoABMASwBlAGkAbABfAEkAUwBBAF8ATQBlAHIAZwBlAGQALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGdVc2Vycy9hYm95ZS9Eb2N1bWVudHMvQm91bG90L0JpYmxpb2dyYXBoaWUvVGhlb3JldGljYWwgZWNvbG9neS9TcGVjaWVzIGludGVyYWN0aW9ucy9LZWlsX0lTQV9NZXJnZWQucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJAB6AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAmA=}}
+
+@Article{Reitan_2019,
+  author        = {Reitan, Trond and Liow, Lee Hsiang},
+  title         = {layeranalyzer: Inferring correlative and causal connections from time series data in r},
+  journal       = {Methods in Ecology and Evolution},
+  year          = {2019},
+  volume        = {10},
+  number        = {12},
+  pages         = {2183-2188},
+  doi           = {10.1111/2041-210X.13299},
+  eprint        = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.13299},
+  url           = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13299},
+  abstract      = {Abstract Distinguishing correlative and causal connections among time series is an important challenge in evolutionary biology, ecology, macroevolution and palaeobiology. Here, we present layeranalyzer, an r package that uses linear stochastic differential equations as a tool for parametrically describing evolutionary and ecological processes and for modelling temporal correlation and Granger causality between two or more time series. We describe the basic functions in layeranalyzer and briefly discuss modelling strategies by demonstrating our tool with three disparate case studies. First, we model a single time series of phenotypic evolution in a bird species; second, we extract cyclical connections in the well-known hare-lynx dataset; third, we infer the correlative and causal connections among the genus origination and extinction rates of brachiopods and bivalves. We summarize the advantages and limitations of using linear stochastic differential equations and layeranalyzer for studying correlative and causal connections.},
+  bdsk-url-1    = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13299},
+  bdsk-url-2    = {https://doi.org/10.1111/2041-210X.13299},
+  date-added    = {2019-12-04 09:05:37 +0100},
+  date-modified = {2019-12-04 09:05:45 +0100},
+  keywords      = {Network inference},
+}
+
+@article{Ohlmann_2019,
+	Abstract = {Abstract Describing how ecological interactions change over space and time and how they are shaped by environmental conditions is crucial to understand and predict ecosystem trajectories. However, it requires having an appropriate framework to measure network diversity locally, regionally and between samples (α-, γ- and β-diversity). Here, we propose a unifying framework that builds on Hill numbers and accounts both for the probabilistic nature of biotic interactions and the abundances of species or groups. We emphasise the importance of analysing network diversity across different species aggregation levels (e.g. from species to trophic groups) to get a better understanding of network structure. We illustrate our framework with a simulation experiment and an empirical analysis using a global food-web database. We discuss further usages of the framework and show how it responds to recent calls on comparing ecological networks and analysing their variation across environmental gradients and time.},
+	Author = {Ohlmann, Marc and Miele, Vincent and Dray, St{\'e}phane and Chalmandrier, Lo{\"\i}c and O'Connor, Louise and Thuiller, Wilfried},
+	Date-Added = {2019-11-12 16:43:11 +0100},
+	Date-Modified = {2019-11-12 16:43:11 +0100},
+	Doi = {10.1111/ele.13221},
+	Eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/ele.13221},
+	Journal = {Ecology Letters},
+	Keywords = {Network analysis},
+	Number = {4},
+	Pages = {737-747},
+	Title = {Diversity indices for ecological networks: a unifying framework using Hill numbers},
+	Url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13221},
+	Volume = {22},
+	Year = {2019},
+	Bdsk-Url-1 = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13221},
+	Bdsk-Url-2 = {https://doi.org/10.1111/ele.13221}}
+
+@article{Bramon-Mora_2018,
+	Abstract = {Although the structure of empirical food webs can differ between ecosystems, there is growing evidence of multiple ways in which they also exhibit common topological properties. To reconcile these contrasting observations, we postulate the existence of a backbone of interactions underlying all ecological networks---a common substructure within every network comprised of species playing similar ecological roles---and a periphery of species whose idiosyncrasies help explain the differences between networks. To test this conjecture, we introduce a new approach to investigate the structural similarity of 411 food webs from multiple environments and biomes. We first find significant differences in the way species in different ecosystems interact with each other. Despite these differences, we then show that there is compelling evidence of a common backbone of interactions underpinning all food webs. We expect that identifying a backbone of interactions will shed light on the rules driving assembly of different ecological communities.},
+	Author = {Bramon Mora, Bernat and Gravel, Dominique and Gilarranz, Luis J. and Poisot, Timoth{\'e}e and Stouffer, Daniel B.},
+	Date-Added = {2019-11-07 14:43:08 +0100},
+	Date-Modified = {2019-11-07 14:43:08 +0100},
+	Doi = {10.1038/s41467-018-05056-0},
+	Isbn = {2041-1723},
+	Journal = {Nature Communications},
+	Keywords = {Network analysis},
+	Number = {1},
+	Pages = {2603},
+	Title = {Identifying a common backbone of interactions underlying food webs from different ecosystems},
+	Url = {https://doi.org/10.1038/s41467-018-05056-0},
+	Volume = {9},
+	Year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.1038/s41467-018-05056-0}}
+
+@Article{Blonder_2012,
+  author    = {Benjamin Blonder and Tina W. Wey and Anna Dornhaus and Richard James and Andrew Sih},
+  title     = {Temporal dynamics and network analysis},
+  journal   = {Methods in Ecology and Evolution},
+  year      = {2012},
+  volume    = {3},
+  number    = {6},
+  month     = {aug},
+  pages     = {958--972},
+  doi       = {10.1111/j.2041-210x.2012.00236.x},
+  url       = {https://doi.org/10.1111%2Fj.2041-210x.2012.00236.x},
+  publisher = {Wiley},
+}
+
+@article{Barner_2018,
+	Abstract = {Abstract The difficulty of experimentally quantifying non-trophic species interactions has long troubled ecologists. Increasingly, a new application of the classic ``checkerboard distribution'' approach is used to infer interactions by examining the pairwise frequency at which species are found to spatially co-occur. However, the link between spatial associations, as estimated from observational co-occurrence, and species interactions has not been tested. Here we used nine common statistical methods to estimate associations from surveys of rocky intertidal communities in the Northeast Pacific Ocean. We compared those inferred associations with a new data set of experimentally determined net and direct species interactions. Although association methods generated networks with aggregate structure similar to previously published interaction networks, each method detected a different set of species associations from the same data set. Moreover, although association methods generally performed better than a random model, associations rarely matched empirical net or direct species interactions, with high rates of false positives and true positives, and many false negatives. Our findings cast doubt on studies that equate species co-occurrences to species interactions and highlight a persistent, unanswered question: how do we interpret spatial patterns in communities? We suggest future research directions to unify the observational and experimental study of species interactions, and discuss the need for community standards and best practices in association analysis.},
+	Author = {Barner, Allison K. and Coblentz, Kyle E. and Hacker, Sally D. and Menge, Bruce A.},
+	Date-Added = {2019-11-06 11:58:32 +0100},
+	Date-Modified = {2019-11-06 12:00:04 +0100},
+	Doi = {10.1002/ecy.2133},
+	Eprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecy.2133},
+	Journal = {Ecology},
+	Keywords = {Network inference, Doubts on inference from co-oocurence},
+	Number = {3},
+	Pages = {557-566},
+	Rating = {5},
+	Title = {Fundamental contradictions among observational and experimental estimates of non-trophic species interactions},
+	Url = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2133},
+	Volume = {99},
+	Year = {2018},
+	Bdsk-Url-1 = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2133},
+	Bdsk-Url-2 = {https://doi.org/10.1002/ecy.2133}}
+
+@article{Runge_2018,
+	Author = {Runge,J.},
+	Date-Added = {2019-11-06 11:57:54 +0100},
+	Date-Modified = {2019-11-06 11:58:08 +0100},
+	Doi = {10.1063/1.5025050},
+	Eprint = {https://doi.org/10.1063/1.5025050},
+	Journal = {Chaos: An Interdisciplinary Journal of Nonlinear Science},
+	Keywords = {Network inference, Convergent-Cross Mapping},
+	Number = {7},
+	Pages = {075310},
+	Rating = {5},
+	Title = {Causal network reconstruction from time series: From theoretical assumptions to practical estimation},
+	Url = {https://doi.org/10.1063/1.5025050},
+	Volume = {28},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxA2Li4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ0NNL1J1bmdlIDIwMTgucGRmTxEBjAAAAAABjAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////DlJ1bmdlIDIwMTgucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAwAEAAAKIGN1AAAAAAAAAAAAAAAAAANDQ00AAAIATC86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlN0YXRpc3RpcXVlczpDQ006UnVuZ2UgMjAxOC5wZGYADgAeAA4AUgB1AG4AZwBlACAAMgAwADEAOAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIASlVzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ0NNL1J1bmdlIDIwMTgucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAF0AAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAB7Q==},
+	Bdsk-Url-1 = {https://doi.org/10.1063/1.5025050}}
+
+@Article{Albouy_2019,
+  author        = {Albouy, Camille and Archambault, Philippe and Appeltans, Ward and Ara{\'u}jo, Miguel B. and Beauchesne, David and Cazelles, Kevin and Cirtwill, Alyssa R. and Fortin, Marie-Jos{\'e}e and Galiana, Nuria and Leroux, Shawn J. and Pellissier, Lo{\"\i}c and Poisot, Timoth{\'e}e and Stouffer, Daniel B. and Wood, Spencer A. and Gravel, Dominique},
+  title         = {The marine fish food web is globally connected},
+  journal       = {Nature Ecology \& Evolution},
+  year          = {2019},
+  volume        = {3},
+  number        = {8},
+  pages         = {1153--1161},
+  doi           = {10.1038/s41559-019-0950-y},
+  url           = {https://doi.org/10.1038/s41559-019-0950-y},
+  abstract      = {The productivity of marine ecosystems and the services they provide to humans are largely dependent on complex interactions between prey and predators. These are embedded in a diverse network of trophic interactions, resulting in a cascade of events following perturbations such as species extinction. The sheer scale of oceans, however, precludes the characterization of marine feeding networks through de novo sampling. This effort ought instead to rely on a combination of extensive data and inference. Here we investigate how the distribution of trophic interactions at the global scale shapes the marine fish food web structure. We hypothesize that the heterogeneous distribution of species ranges in biogeographic regions should concentrate interactions in the warmest areas and within species groups. We find that the inferred global metaweb of marine fish---that is, all possible potential feeding links between co-occurring species---is highly connected geographically with a low degree of spatial modularity. Metrics of network structure correlate with sea surface temperature and tend to peak towards the tropics. In contrast to open-water communities, coastal food webs have greater interaction redundancy, which may confer robustness to species extinction. Our results suggest that marine ecosystems are connected yet display some resistance to perturbations because of high robustness at most locations.},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBVLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UaGVvcmV0aWNhbCBlY29sb2d5L05ldHdvcmsvQWxib3V5IDIwMTkgKE5hdC4gRWNvbC4gRXZvbC4pLnBkZk8RAfgAAAAAAfgAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9BbGJvdXkgMjAxOSAoTmF0LiAjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAMABAAACiBjdQAAAAAAAAAAAAAAAAAHTmV0d29yawAAAgBrLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6VGhlb3JldGljYWwgZWNvbG9neTpOZXR3b3JrOkFsYm91eSAyMDE5IChOYXQuIEVjb2wuIEV2b2wuKS5wZGYAAA4ARgAiAEEAbABiAG8AdQB5ACAAMgAwADEAOQAgACgATgBhAHQALgAgAEUAYwBvAGwALgAgAEUAdgBvAGwALgApAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBpVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1RoZW9yZXRpY2FsIGVjb2xvZ3kvTmV0d29yay9BbGJvdXkgMjAxOSAoTmF0LiBFY29sLiBFdm9sLikucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJAB8AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAng=},
+  bdsk-url-1    = {https://doi.org/10.1038/s41559-019-0950-y},
+  da            = {2019/08/01},
+  date-added    = {2019-11-06 11:56:07 +0100},
+  date-modified = {2019-11-06 11:56:22 +0100},
+  isbn          = {2397-334X},
+  keywords      = {Network inference},
+}
+
+@article{Sander_2017,
+	Author = {Sander, Elizabeth L. and Wootton, J. Timothy and Allesina, Stefano},
+	Date-Added = {2019-11-06 11:52:55 +0100},
+	Date-Modified = {2019-11-06 11:53:22 +0100},
+	Doi = {10.1038/s41598-017-07009-x},
+	Issn = {2045-2322},
+	Journal = {Scientific Reports},
+	Keywords = {Network inference, Dynamic Bayesian Networks},
+	Month = {Aug},
+	Number = {1},
+	Publisher = {Springer Nature},
+	Title = {Ecological Network Inference From Long-Term Presence-Absence Data},
+	Url = {http://dx.doi.org/10.1038/s41598-017-07009-x},
+	Volume = {7},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBGLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvU2FuZGVyIGV0IGFsLiAyMDE5IChTY2kuIFJlcC4pLnBkZk8RAdwAAAAAAdwAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9TYW5kZXIgZXQgYWwuIDIwMTkjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAMAAwAACiBjdQAAAAAAAAAAAAAAAAAMU3RhdGlzdGlxdWVzAAIAXC86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlN0YXRpc3RpcXVlczpTYW5kZXIgZXQgYWwuIDIwMTkgKFNjaS4gUmVwLikucGRmAA4ARgAiAFMAYQBuAGQAZQByACAAZQB0ACAAYQBsAC4AIAAyADAAMQA5ACAAKABTAGMAaQAuACAAUgBlAHAALgApAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBaVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1N0YXRpc3RpcXVlcy9TYW5kZXIgZXQgYWwuIDIwMTkgKFNjaS4gUmVwLikucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAG0AAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACTQ==}}
+
+@article{Gravel_2018,
+	Abstract = {Biogeography has traditionally focused on the spatial distribution and abundance of species. Both are driven by the way species interact with one another, but only recently community ecologists realized the need to document their spatial and temporal variation. Here, we call for an integrated approach, adopting the view that community structure is best represented as a network of ecological interactions, and show how it translates to biogeography questions. We propose that the ecological niche should encompass the effect of the environment on species distribution (the Grinnellian dimension of the niche) and on the ecological interactions among them (the Eltonian dimension). Starting from this concept, we develop a quantitative theory to explain turnover of interactions in space and time -- i.e. a novel approach to interaction distribution modeling. We apply this framework to host--parasite interactions across Europe and find that two aspects of the environment (temperature and precipitation) exert a strong imprint on species co-occurrence, but not on species interactions. Even where species co-occur, interaction proves to be stochastic rather than deterministic, adding to variation in realized network structure. We also find that a large majority of host-parasite pairs are never found together, thus precluding any inferences regarding their probability to interact. This first attempt to explain variation of network structure at large spatial scales opens new perspectives at the interface of species distribution modeling and community ecology.},
+	Author = {Gravel, Dominique and Baiser, Benjamin and Dunne, Jennifer A. and Kopelke, Jens-Peter and Martinez, Neo D. and Nyman, Tommi and Poisot, Timoth{\'e}e and Stouffer, Daniel B. and Tylianakis, Jason M. and Wood, Spencer A. and Roslin, Tomas},
+	Date-Added = {2019-11-06 11:50:33 +0100},
+	Date-Modified = {2019-11-06 11:51:08 +0100},
+	Doi = {10.1111/ecog.04006},
+	Eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.04006},
+	Journal = {Ecography},
+	Keywords = {Network inference},
+	Pages = {401--415},
+	Title = {Bringing Elton and Grinnell together: a quantitative framework to represent the biogeography of ecological interaction networks},
+	Url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04006},
+	Volume = {42},
+	Year = {2018},
+	Bdsk-Url-1 = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04006},
+	Bdsk-Url-2 = {https://doi.org/10.1111/ecog.04006}}
+
+@Article{Ushio_2018a,
+  author        = {Ushio, Masayuki and Hsieh, Chih-hao and Masuda, Reiji and Deyle, Ethan R and Ye, Hao and Chang, Chun-Wei and Sugihara, George and Kondoh, Michio},
+  title         = {Fluctuating interaction network and time-varying stability of a natural fish community},
+  journal       = {Nature},
+  year          = {2018},
+  date          = {2018/02/07/online},
+  volume        = {554},
+  url           = {https://doi.org/10.1038/nature25504},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBTLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UaGVvcmV0aWNhbCBlY29sb2d5L1N0YWJpbGl0eS9Vc2hpbyBldCBhbC4gMjAxOCAoTmF0dXJlKS5wZGZPEQHuAAAAAAHuAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8eVXNoaW8gZXQgYWwuIDIwMTggKE5hdHVyZSkucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAACVN0YWJpbGl0eQAAAgBpLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6VGhlb3JldGljYWwgZWNvbG9neTpTdGFiaWxpdHk6VXNoaW8gZXQgYWwuIDIwMTggKE5hdHVyZSkucGRmAAAOAD4AHgBVAHMAaABpAG8AIABlAHQAIABhAGwALgAgADIAMAAxADgAIAAoAE4AYQB0AHUAcgBlACkALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGdVc2Vycy9hYm95ZS9Eb2N1bWVudHMvQm91bG90L0JpYmxpb2dyYXBoaWUvVGhlb3JldGljYWwgZWNvbG9neS9TdGFiaWxpdHkvVXNoaW8gZXQgYWwuIDIwMTggKE5hdHVyZSkucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJAB6AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAmw=},
+  bdsk-url-1    = {https://doi.org/10.1038/nature25504},
+  date-added    = {2019-11-06 11:49:22 +0100},
+  date-modified = {2019-11-06 11:50:20 +0100},
+  keywords      = {Network inference, Convergent-Cross Mapping},
+  l3            = {10.1038/nature25504; https://www.nature.com/articles/nature25504#supplementary-information},
+}
+
+@article{Poisot_2019,
+	Abstract = {Networks are a convenient way to represent many interactions among ecological entities. The analysis of ecological networks is challenging for two reasons. First, there is a plethora of measures that can be applied (and some of them measure the same property). Second, the implementation of these measures is sometimes difficult. We present 'EcologicalNetworks.jl', a package for the `Julia' programming language. Using a layered system of types to represent several types of ecological networks, this packages offers a solid library of basic functions which can be chained together to perform the most common analyses of ecological networks.},
+	Author = {Poisot, Timoth{\'e}e and B{\'e}lisle, Zachary and Hoebeke, Laura and Stock, Michiel and Szefer, Piotr},
+	Date-Added = {2019-11-06 11:47:00 +0100},
+	Date-Modified = {2019-11-06 11:47:18 +0100},
+	Doi = {10.1111/ecog.04310},
+	Eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.04310},
+	Journal = {Ecography},
+	Keywords = {Network analysis; Julia package},
+	Number = {11},
+	Pages = {1850-1861},
+	Title = {EcologicalNetworks.jl: analysing ecological networks of species interactions},
+	Url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04310},
+	Volume = {42},
+	Year = {2019},
+	Bdsk-Url-1 = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04310},
+	Bdsk-Url-2 = {https://doi.org/10.1111/ecog.04310}}
+
+@Article{Siwicka_2019,
+  author        = {Siwicka, Ewa and Thrush, Simon F. and Hewitt, Judi E.},
+  title         = {Linking changes in species--trait relationships and ecosystem function using a network analysis of traits},
+  journal       = {Ecological Applications},
+  year          = {2019},
+  issn          = {1939-5582},
+  doi           = {10.1002/eap.2010},
+  url           = {http://dx.doi.org/10.1002/EAP.2010},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBTLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UcmFpdHMgZGUgdmllL1Npd2lja2FfZXRfYWwtMjAxOS1FY29sb2dpY2FsX0FwcGxpY2F0aW9ucy5wZGZPEQISAAAAAAISAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fU2l3aWNrYV9ldF9hbC0yMDE5I0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAMAAAogY3UAAAAAAAAAAAAAAAAADVRyYWl0cyBkZSB2aWUAAAIAaS86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlRyYWl0cyBkZSB2aWU6U2l3aWNrYV9ldF9hbC0yMDE5LUVjb2xvZ2ljYWxfQXBwbGljYXRpb25zLnBkZgAADgBeAC4AUwBpAHcAaQBjAGsAYQBfAGUAdABfAGEAbAAtADIAMAAxADkALQBFAGMAbwBsAG8AZwBpAGMAYQBsAF8AQQBwAHAAbABpAGMAYQB0AGkAbwBuAHMALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGdVc2Vycy9hYm95ZS9Eb2N1bWVudHMvQm91bG90L0JpYmxpb2dyYXBoaWUvVHJhaXRzIGRlIHZpZS9TaXdpY2thX2V0X2FsLTIwMTktRWNvbG9naWNhbF9BcHBsaWNhdGlvbnMucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJAB6AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAApA=},
+  bdsk-url-1    = {https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2010},
+  date-added    = {2019-11-06 11:42:51 +0100},
+  date-modified = {2019-11-06 11:43:03 +0100},
+  keywords      = {Network inference},
+  publisher     = {Wiley},
+}
+
+@Article{Thurman_2019,
+  author        = {Thurman, Lindsey L. and Barner, Allison K. and Garcia, Tiffany S. and Chestnut, Tara},
+  title         = {Testing the link between species interactions and species co-occurrence in a trophic network},
+  journal       = {Ecography},
+  year          = {2019},
+  doi           = {10.1111/ecog.04360},
+  eprint        = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.04360},
+  url           = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04360},
+  abstract      = {Species interactions are dynamic processes that vary across environmental and ecological contexts, and operate across scale boundaries, making them difficult to quantify. Nevertheless, ecologists are increasingly interested in inferring species interactions from observational data using statistical analyses of their spatial co-occurrence patterns. Trophic interactions present a particular challenge, as predators and prey may frequently or rarely co-occur, depending on the spatial or temporal scale of observation. In this study, we investigate the accuracy of inferred interactions among species that both compete and trophically interact. We utilized a long-term dataset of pond-breeding amphibian co-occurrences from Mt Rainier National Park (Washington, USA) and compiled a new dataset of their empirical interactions from the literature. We compared the accuracy of four statistical methods in inferring these known species interactions from spatial associations. We then used the best performing statistical method, the Markov network, to further investigate the sensitivity of interaction inference to spatial scale-dependence and the presence of predators. We show that co-occurrence methods are generally inaccurate when estimating trophic interactions. Further the strength and sign of inferred interactions were dependent upon the spatial scale of observation and predator presence influenced the detectability of competitive interactions among prey species. However, co-occurrence analysis revealed new patterns of spatial association among pairs of species with known interactions. Overall, our study highlights a limiting frontier in co-occurrence theory and the disconnect between widely implemented methodologies and their ability to accurately infer interactions in trophically-structured communities.},
+  annote        = {Hierarchical approach to species interactions from space-time co-occurence data (e.g. REBENT) 1) Define groups of spatially co-occuring species : positive aspect of their association 2) Study the temporal dynamics within these groups (negative/positive associations, lags ?)},
+  bdsk-url-1    = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04360},
+  bdsk-url-2    = {https://doi.org/10.1111/ecog.04360},
+  date-added    = {2019-11-06 11:38:11 +0100},
+  date-modified = {2019-11-06 12:01:28 +0100},
+  keywords      = {Networks in ecology, Multilayer networks},
+  rating        = {4},
+}
+
+@Article{Barraquand_2019,
+  author        = {Barraquand, Frederic and Picoche, Coralie and Detto, Matteo and Hartig, Florian},
+  title         = {Inferring species interactions using Granger causality and convergent cross mapping},
+  journal       = {arXiv preprint arXiv:1909.00731},
+  year          = {2019},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBCLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ0NNL0JhcnJhcXVhbmQgZXQgYWwuIDIwMTkucGRmTxEBvAAAAAABvAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////GkJhcnJhcXVhbmQgZXQgYWwuIDIwMTkucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAwAEAAAKIGN1AAAAAAAAAAAAAAAAAANDQ00AAAIAWC86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlN0YXRpc3RpcXVlczpDQ006QmFycmFxdWFuZCBldCBhbC4gMjAxOS5wZGYADgA2ABoAQgBhAHIAcgBhAHEAdQBhAG4AZAAgAGUAdAAgAGEAbAAuACAAMgAwADEAOQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAVlVzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ0NNL0JhcnJhcXVhbmQgZXQgYWwuIDIwMTkucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAGkAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACKQ==},
+  date-added    = {2019-10-31 16:33:41 +0100},
+  date-modified = {2019-10-31 16:33:54 +0100},
+  keywords      = {Convergent-Cross Mapping, Network inference, Convergent-Cross Mapping, Network inference},
+}
+
+@article{Roberts_2019,
+	Abstract = {Abstract Distance-based ordinations have played a critical role in community ecology for more than half a century, but are still under active development. These methods employ a matrix of pairwise distances or dissimilarities between sample units, and map sample units from the high-dimensional distance or dissimilarity space to a low dimensional representation for analysis. Distance- or dissimilarity-based methods employ continuum or gradient ecological theory and a variety of statistical models to achieve the mapping. Recently, ecologists have developed model-based ordinations based on latent vectors and individual species response models. These methods employ the individualistic perspective of Gleason as the ecological model, and Bayesian or maximum likelihood methods to estimate the parameters for the low dimensional space represented by the latent vectors. In this research I compared two distance-based methods (NMDS and t-SNE) with two model-based methods (BORAL and REO) on five data sets to determine which methods are superior for (1) extracting meaningful ecological drivers of variability in community composition; and (2) estimating sample unit locations in ordination space that maximize the goodness-of-fit of individual species response models to the estimated sample unit locations. Environmental variables and species were fitted to the ordinations by Generalized AdditiveModels (GAMs) with Gaussian, negative binomial, or Poisson distribution models as appropriate. Across the five data sets, 22 models of environmental variability and 449 models of species distributions were calculated for each of the ordination methods. To minimize the effects of stochasticity the entire analysis was replicated three times and results averaged across the replicates. Results were evaluated by deviance explained and AIC for environmental variables and species distributions, averaged by ordination method for each data set, and ranked from best to worst. For the four assessments distance-based methods ranked 1 and 2 in three cases, and 1 and 3 in one case, significantly out-performing the model-based methods. t-SNE was the top performing method, out-performing NMDS especially on the more complex data sets. In general the gradient-based theoretical basis and data sufficiency of distance-based methods allowed distance-based methods to outperform model-based methods in every assessment.},
+	Author = {Roberts, David W.},
+	Date-Added = {2019-10-31 15:14:13 +0100},
+	Date-Modified = {2019-10-31 15:14:29 +0100},
+	Doi = {10.1002/ecy.2908},
+	Eprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecy.2908},
+	Journal = {Ecology},
+	Keywords = {LVM},
+	Title = {Comparison of distance-based and model-based ordinations},
+	Url = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2908},
+	Year = {2019},
+	Bdsk-Url-1 = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2908},
+	Bdsk-Url-2 = {https://doi.org/10.1002/ecy.2908}}
+
+@article{Cenci_2019,
+	Author = {Cenci, Simone and Sugihara, George and Saavedra, Serguei},
+	Date-Added = {2019-10-29 14:18:19 +0100},
+	Date-Modified = {2019-10-29 14:18:25 +0100},
+	Doi = {10.1111/2041-210x.13150},
+	Issn = {2041-210X},
+	Journal = {Methods in Ecology and Evolution},
+	Keywords = {Convergent-Cross Mapping},
+	Month = {Jan},
+	Publisher = {Wiley},
+	Title = {Regularized S-map for inference and forecasting with noisy ecological time series},
+	Url = {http://dx.doi.org/10.1111/2041-210X.13150},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBZLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ2VuY2lfZXRfYWwtMjAxOS1NZXRob2RzX2luX0Vjb2xvZ3lfYW5kX0V2b2x1dGlvbi5wZGZPEQIqAAAAAAIqAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fQ2VuY2lfZXRfYWwtMjAxOS1NI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAMAAAogY3UAAAAAAAAAAAAAAAAADFN0YXRpc3RpcXVlcwACAG8vOlVzZXJzOmFib3llOkRvY3VtZW50czpCb3Vsb3Q6QmlibGlvZ3JhcGhpZTpTdGF0aXN0aXF1ZXM6Q2VuY2lfZXRfYWwtMjAxOS1NZXRob2RzX2luX0Vjb2xvZ3lfYW5kX0V2b2x1dGlvbi5wZGYAAA4AbAA1AEMAZQBuAGMAaQBfAGUAdABfAGEAbAAtADIAMAAxADkALQBNAGUAdABoAG8AZABzAF8AaQBuAF8ARQBjAG8AbABvAGcAeQBfAGEAbgBkAF8ARQB2AG8AbAB1AHQAaQBvAG4ALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAG1Vc2Vycy9hYm95ZS9Eb2N1bWVudHMvQm91bG90L0JpYmxpb2dyYXBoaWUvU3RhdGlzdGlxdWVzL0NlbmNpX2V0X2FsLTIwMTktTWV0aG9kc19pbl9FY29sb2d5X2FuZF9Fdm9sdXRpb24ucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJACAAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAq4=},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1111/2041-210X.13150},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1111/2041-210x.13150}}
+
+@article{Clark_2015,
+	Author = {Clark, Adam Thomas and Ye, Hao and Isbell, Forest and Deyle, Ethan R. and Cowles, Jane and Tilman, G. David and Sugihara, George},
+	Date-Added = {2019-10-29 14:17:52 +0100},
+	Date-Modified = {2019-10-29 14:18:10 +0100},
+	Doi = {10.1890/14-1479.1},
+	Issn = {0012-9658},
+	Journal = {Ecology},
+	Keywords = {Convergent-Cross Mapping},
+	Month = {May},
+	Number = {5},
+	Pages = {1174--1181},
+	Publisher = {Wiley},
+	Rating = {5},
+	Read = {1},
+	Title = {Spatial convergent cross mapping to detect causal relationships from short time series},
+	Url = {http://dx.doi.org/10.1890/14-1479.1},
+	Volume = {96},
+	Year = {2015},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBALi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ2xhcmtfZXRfYWwtMjAxNS1FY29sb2d5LnBkZk8RAcQAAAAAAcQAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////xxDbGFya19ldF9hbC0yMDE1LUVjb2xvZ3kucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAFBERiAAAAAAAAMAAwAACiBjdQAAAAAAAAAAAAAAAAAMU3RhdGlzdGlxdWVzAAIAVi86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlN0YXRpc3RpcXVlczpDbGFya19ldF9hbC0yMDE1LUVjb2xvZ3kucGRmAA4AOgAcAEMAbABhAHIAawBfAGUAdABfAGEAbAAtADIAMAAxADUALQBFAGMAbwBsAG8AZwB5AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBUVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1N0YXRpc3RpcXVlcy9DbGFya19ldF9hbC0yMDE1LUVjb2xvZ3kucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAGcAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACLw==},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1890/14-1479.1}}
+
+@article{Ye_2015_delay,
+	Author = {Ye, Hao and Deyle, Ethan R. and Gilarranz, Luis J. and Sugihara, George},
+	Date-Added = {2019-10-29 14:15:36 +0100},
+	Date-Modified = {2019-10-29 14:15:50 +0100},
+	Doi = {10.1038/srep14750},
+	Issn = {2045-2322},
+	Journal = {Scientific Reports},
+	Keywords = {Convergent-Cross Mapping, Network inference},
+	Month = {Oct},
+	Number = {1},
+	Publisher = {Springer Nature},
+	Rating = {5},
+	Title = {Distinguishing time-delayed causal interactions using convergent cross mapping},
+	Url = {http://dx.doi.org/10.1038/srep14750},
+	Volume = {5},
+	Year = {2015},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBHLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ0NNL1llIGV0IGFsLiwgMjAxNSAoU2NpLiBSZXAuKS5wZGZPEQHSAAAAAAHSAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fWWUgZXQgYWwuLCAyMDE1IChTY2kuIFJlcC4pLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAAA0NDTQAAAgBdLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6U3RhdGlzdGlxdWVzOkNDTTpZZSBldCBhbC4sIDIwMTUgKFNjaS4gUmVwLikucGRmAAAOAEAAHwBZAGUAIABlAHQAIABhAGwALgAsACAAMgAwADEANQAgACgAUwBjAGkALgAgAFIAZQBwAC4AKQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAW1VzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvQ0NNL1llIGV0IGFsLiwgMjAxNSAoU2NpLiBSZXAuKS5wZGYAABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAG4AAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACRA==}}
+
+@Article{Ushio_2018b,
+  author        = {Ushio, Masayuki and Hsieh, Chih-hao and Masuda, Reiji and Deyle, Ethan R and Ye, Hao and Chang, Chun-Wei and Sugihara, George and Kondoh, Michio},
+  title         = {Fluctuating interaction network and time-varying stability of a natural fish community},
+  journal       = {Nature},
+  year          = {2018},
+  date          = {2018/02/07/online},
+  volume        = {554},
+  month         = {02},
+  pages         = {360 EP -},
+  url           = {https://doi.org/10.1038/nature25504},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBTLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UaGVvcmV0aWNhbCBlY29sb2d5L1N0YWJpbGl0eS9Vc2hpbyBldCBhbC4gMjAxOCAoTmF0dXJlKS5wZGZPEQHuAAAAAAHuAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8eVXNoaW8gZXQgYWwuIDIwMTggKE5hdHVyZSkucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAACVN0YWJpbGl0eQAAAgBpLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6VGhlb3JldGljYWwgZWNvbG9neTpTdGFiaWxpdHk6VXNoaW8gZXQgYWwuIDIwMTggKE5hdHVyZSkucGRmAAAOAD4AHgBVAHMAaABpAG8AIABlAHQAIABhAGwALgAgADIAMAAxADgAIAAoAE4AYQB0AHUAcgBlACkALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGdVc2Vycy9hYm95ZS9Eb2N1bWVudHMvQm91bG90L0JpYmxpb2dyYXBoaWUvVGhlb3JldGljYWwgZWNvbG9neS9TdGFiaWxpdHkvVXNoaW8gZXQgYWwuIDIwMTggKE5hdHVyZSkucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJAB6AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAmw=},
+  bdsk-url-1    = {https://doi.org/10.1038/nature25504},
+  date-added    = {2019-10-29 14:14:06 +0100},
+  date-modified = {2019-10-29 14:16:32 +0100},
+  day           = {07},
+  keywords      = {Convergent-Cross Mapping, Network inference},
+  l3            = {10.1038/nature25504; https://www.nature.com/articles/nature25504#supplementary-information},
+  publisher     = {Macmillan Publishers Limited, part of Springer Nature. All rights reserved. SN -},
+  ty            = {JOUR},
+}
+
+@Article{Hutchinson_2018,
+  author    = {Matthew C. Hutchinson and Bernat Bramon Mora and Shai Pilosof and Allison K. Barner and Sonia K{\'{e}}fi and Elisa Th{\'{e}}bault and Pedro Jordano and Daniel B. Stouffer},
+  title     = {Seeing the forest for the trees: Putting multilayer networks to work for community ecology},
+  journal   = {Functional Ecology},
+  year      = {2018},
+  editor    = {Oscar Godoy},
+  volume    = {33},
+  number    = {2},
+  month     = {nov},
+  pages     = {206--217},
+  doi       = {10.1111/1365-2435.13237},
+  url       = {https://doi.org/10.1111%2F1365-2435.13237},
+  publisher = {Wiley},
+}
+
+@electronic{ALIEN_package,
+	Author = {Guillaume Blanchet, F.},
+	Date-Added = {2019-10-29 12:13:19 +0100},
+	Date-Modified = {2019-10-29 12:14:23 +0100},
+	Keywords = {R package, Network analysis},
+	Title = {ALIEN: All Links In Ecological Networks},
+	Urldate = {https://github.com/TheoreticalEcosystemEcology/alien},
+	Bdsk-Url-1 = {https://github.com/TheoreticalEcosystemEcology/alien}}
+
+@article{Ovaskainen_2019,
+	Abstract = {A key challenge for community ecology is to understand to what extent observational data can be used to infer the underlying community assembly processes. As different processes can lead to similar or even identical patterns, statistical analyses of non-manipulative observational data never yield undisputable causal inference on the underlying processes. Still, most empirical studies in community ecology are based on observational data, and hence understanding under which circumstances such data can shed light on assembly processes is a central concern for community ecologists. We simulated a spatial agent-based model that generates variation in metacommunity dynamics across multiple axes, including the four classic metacommunity paradigms as special cases. We further simulated a virtual ecologist who analysed snapshot data sampled from the simulations using eighteen output metrics derived from beta-diversity and habitat variation indices, variation partitioning and joint species distribution modelling. Our results indicated two main axes of variation in the output metrics. The first axis of variation described whether the landscape has patchy or continuous variation, and thus was essentially independent of the properties of the species community. The second axis of variation related to the level of predictability of the metacommunity. The most predictable communities were niche-based metacommunities inhabiting static landscapes with marked environmental heterogeneity, such as metacommunities following the species sorting paradigm or the mass effects paradigm. The most unpredictable communities were neutral-based metacommunities inhabiting dynamics landscapes with little spatial heterogeneity, such as metacommunities following the neutral or patch sorting paradigms. The output metrics from joint species distribution modelling yielded generally the highest resolution to disentangle among the simulated scenarios. Yet, the different types of statistical approaches utilized in this study carried complementary information, and thus our results suggest that the most comprehensive evaluation of metacommunity structure can be obtained by combining them.},
+	Author = {Ovaskainen, Otso and Rybicki, Joel and Abrego, Nerea},
+	Date-Added = {2019-10-29 12:04:15 +0100},
+	Date-Modified = {2019-10-29 12:05:23 +0100},
+	Doi = {10.1111/ecog.04444},
+	Eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.04444},
+	Journal = {Ecography},
+	Keywords = {Network inference, HMSC},
+	Title = {What can observational data reveal about metacommunity processes?},
+	Url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04444},
+	Year = {2019},
+	Bdsk-Url-1 = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04444},
+	Bdsk-Url-2 = {https://doi.org/10.1111/ecog.04444}}
+
+@Article{Poisot_2015,
+  author    = {Timoth{\'{e}}e Poisot and Alyssa R. Cirtwill and K{\'{e}}vin Cazelles and Dominique Gravel and Marie-Jos{\'{e}}e Fortin and Daniel B. Stouffer},
+  title     = {The structure of probabilistic networks},
+  journal   = {Methods in Ecology and Evolution},
+  year      = {2015},
+  editor    = {Jana Vamosi},
+  volume    = {7},
+  number    = {3},
+  month     = {oct},
+  pages     = {303--312},
+  doi       = {10.1111/2041-210x.12468},
+  url       = {https://doi.org/10.1111%2F2041-210x.12468},
+  publisher = {Wiley},
+}
+
+@Article{Cirtwill_2018,
+  author    = {Alyssa R. Cirtwill and Anna Eklöf},
+  title     = {Feeding environment and other traits shape species' roles in marine food webs},
+  journal   = {Ecology Letters},
+  year      = {2018},
+  editor    = {Ulrich Brose},
+  volume    = {21},
+  number    = {6},
+  month     = {apr},
+  pages     = {875--884},
+  doi       = {10.1111/ele.12955},
+  url       = {https://doi.org/10.1111%2Fele.12955},
+  publisher = {Wiley},
+}
+
+@Article{Rohr_2016,
+  author    = {Rudolf P. Rohr and Russell E. Naisbit and Christian Mazza and Louis-F{\'{e}}lix Bersier},
+  title     = {Matching{\textendash}centrality decomposition and the forecasting of new links in networks},
+  journal   = {Proceedings of the Royal Society B: Biological Sciences},
+  year      = {2016},
+  volume    = {283},
+  number    = {1824},
+  month     = {feb},
+  pages     = {20152702},
+  doi       = {10.1098/rspb.2015.2702},
+  url       = {https://doi.org/10.1098%2Frspb.2015.2702},
+  publisher = {The Royal Society},
+}
+
+@article{Kefi_2015,
+	Abstract = {How multiple types of non-trophic interactions map onto trophic networks in real communities remains largely unknown. We present the first effort, to our knowledge, describing a comprehensive ecological network that includes all known trophic and diverse non-trophic links among >100 coexisting species for the marine rocky intertidal community of the central Chilean coast. Our results suggest that non-trophic interactions exhibit highly nonrandom structures both alone and with respect to food web structure. The occurrence of different types of interactions, relative to all possible links, was well predicted by trophic structure and simple traits of the source and target species. In this community, competition for space and positive interactions related to habitat/refuge provisioning by sessile and/or basal species were by far the most abundant non-trophic interactions. If these patterns are corroborated in other ecosystems, they may suggest potentially important dynamic constraints on the combined architecture of trophic and non-trophic interactions. The nonrandom patterning of non-trophic interactions suggests a path forward for developing a more comprehensive ecological network theory to predict the functioning and resilience of ecological communities.},
+	Author = {K{\'e}fi, Sonia and Berlow, Eric L. and Wieters, Evie A. and Joppa, Lucas N. and Wood, Spencer A. and Brose, Ulrich and Navarrete, Sergio A.},
+	Date-Added = {2019-10-29 11:29:12 +0100},
+	Date-Modified = {2019-10-29 11:29:43 +0100},
+	Doi = {10.1890/13-1424.1},
+	Eprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1890/13-1424.1},
+	Journal = {Ecology},
+	Keywords = {Networks in ecology, Benthos},
+	Number = {1},
+	Pages = {291-303},
+	Title = {Network structure beyond food webs: mapping non-trophic and trophic interactions on Chilean rocky shores},
+	Url = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/13-1424.1},
+	Volume = {96},
+	Year = {2015},
+	Bdsk-Url-1 = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/13-1424.1},
+	Bdsk-Url-2 = {https://doi.org/10.1890/13-1424.1}}
+
+@article{Simmons_2019,
+	Abstract = {Indirect interactions play an essential role in governing population, community and coevolutionary dynamics across a diverse range of ecological communities. Such communities are widely represented as bipartite networks: graphs depicting interactions between two groups of species, such as plants and pollinators or hosts and parasites. For over thirty years, studies have used indices, such as connectance and species degree, to characterise the structure of these networks and the roles of their constituent species. However, compressing a complex network into a single metric necessarily discards large amounts of information about indirect interactions. Given the large literature demonstrating the importance and ubiquity of indirect effects, many studies of network structure are likely missing a substantial piece of the ecological puzzle. Here we use the emerging concept of bipartite motifs to outline a new framework for bipartite networks that incorporates indirect interactions. While this framework is a significant departure from the current way of thinking about bipartite ecological networks, we show that this shift is supported by analyses of simulated and empirical data. We use simulations to show how consideration of indirect interactions can highlight differences missed by the current index paradigm that may be ecologically important. We extend this finding to empirical plant--pollinator communities, showing how two bee species, with similar direct interactions, differ in how specialised their competitors are. These examples underscore the need to not rely solely on network- and species-level indices for characterising the structure of bipartite ecological networks.},
+	Author = {Simmons, Benno I. and Cirtwill, Alyssa R. and Baker, Nick J. and Wauchope, Hannah S. and Dicks, Lynn V. and Stouffer, Daniel B. and Sutherland, William J.},
+	Date-Added = {2019-10-29 11:27:47 +0100},
+	Date-Modified = {2019-10-29 11:47:03 +0100},
+	Doi = {10.1111/oik.05670},
+	Eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/oik.05670},
+	Journal = {Oikos},
+	Keywords = {Network analysis, Indirect interactions},
+	Number = {2},
+	Pages = {154-170},
+	Title = {Motifs in bipartite ecological networks: uncovering indirect interactions},
+	Url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/oik.05670},
+	Volume = {128},
+	Year = {2019},
+	Bdsk-Url-1 = {https://onlinelibrary.wiley.com/doi/abs/10.1111/oik.05670},
+	Bdsk-Url-2 = {https://doi.org/10.1111/oik.05670}}
+
+@Article{Freilich_2018,
+  author    = {Mara A. Freilich and Evie Wieters and Bernardo R. Broitman and Pablo A. Marquet and Sergio A. Navarrete},
+  title     = {Species co-occurrence networks: Can they reveal trophic and non-trophic interactions in ecological communities?},
+  journal   = {Ecology},
+  year      = {2018},
+  volume    = {99},
+  number    = {3},
+  month     = {feb},
+  pages     = {690--699},
+  doi       = {10.1002/ecy.2142},
+  url       = {https://doi.org/10.1002%2Fecy.2142},
+  publisher = {Wiley},
+}
+
+@article{Delmas_2018,
+	Author = {Delmas, Eva and Besson, Mathilde and Brice, Marie-H{\'e}l{\`e}ne and Burkle, Laura A. and Dalla Riva, Giulio V. and Fortin, Marie-Jos{\'e}e and Gravel, Dominique and Guimar{\~a}es, Paulo R. and Hembry, David H. and Newman, Erica A. and et al.},
+	Date-Added = {2019-10-29 11:20:17 +0100},
+	Date-Modified = {2019-10-29 11:47:03 +0100},
+	Doi = {10.1111/brv.12433},
+	Issn = {1464-7931},
+	Journal = {Biological Reviews},
+	Keywords = {Network analysis},
+	Month = {Jun},
+	Number = {1},
+	Pages = {16--36},
+	Publisher = {Wiley},
+	Title = {Analysing ecological networks of species interactions},
+	Url = {http://dx.doi.org/10.1111/brv.12433},
+	Volume = {94},
+	Year = {2018},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBbLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UaGVvcmV0aWNhbCBlY29sb2d5L05ldHdvcmsvRGVsbWFzX2V0X2FsLTIwMTktQmlvbG9naWNhbF9SZXZpZXdzLnBkZk8RAhAAAAAAAhAAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9EZWxtYXNfZXRfYWwtMjAxOS0jRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAMABAAACiBjdQAAAAAAAAAAAAAAAAAHTmV0d29yawAAAgBxLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6VGhlb3JldGljYWwgZWNvbG9neTpOZXR3b3JrOkRlbG1hc19ldF9hbC0yMDE5LUJpb2xvZ2ljYWxfUmV2aWV3cy5wZGYAAA4AUgAoAEQAZQBsAG0AYQBzAF8AZQB0AF8AYQBsAC0AMgAwADEAOQAtAEIAaQBvAGwAbwBnAGkAYwBhAGwAXwBSAGUAdgBpAGUAdwBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBvVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1RoZW9yZXRpY2FsIGVjb2xvZ3kvTmV0d29yay9EZWxtYXNfZXRfYWwtMjAxOS1CaW9sb2dpY2FsX1Jldmlld3MucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJACCAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAApY=},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1111/brv.12433}}
+
+@article{Eklof_2013,
+	Author = {Ekl{\"o}f, Anna and Jacob, Ute and Kopp, Jason and Bosch, Jordi and Castro-Urgal, Roc{\'\i}o and Chacoff, Natacha P. and Dalsgaard, Bo and de Sassi, Claudio and Galetti, Mauro and Guimar{\~a}es, Paulo R. and et al.},
+	Date-Added = {2019-10-29 11:19:13 +0100},
+	Date-Modified = {2019-10-29 11:20:49 +0100},
+	Doi = {10.1111/ele.12081},
+	Editor = {Dunne, JenniferEditor},
+	Issn = {1461-023X},
+	Journal = {Ecology Letters},
+	Keywords = {Networks in ecology},
+	Month = {Feb},
+	Number = {5},
+	Pages = {577--583},
+	Publisher = {Wiley},
+	Rating = {5},
+	Title = {The dimensionality of ecological networks},
+	Url = {http://dx.doi.org/10.1111/ele.12081},
+	Volume = {16},
+	Year = {2013},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBkLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UaGVvcmV0aWNhbCBlY29sb2d5L1NwZWNpZXMgaW50ZXJhY3Rpb25zL0VrbG9mX2V0X2FsLTIwMTMtRWNvbG9neV9MZXR0ZXJzLnBkZk8RAiQAAAAAAiQAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9Fa2xvZl9ldF9hbC0yMDEzLUUjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAMABAAACiBjdQAAAAAAAAAAAAAAAAAUU3BlY2llcyBpbnRlcmFjdGlvbnMAAgB6LzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6VGhlb3JldGljYWwgZWNvbG9neTpTcGVjaWVzIGludGVyYWN0aW9uczpFa2xvZl9ldF9hbC0yMDEzLUVjb2xvZ3lfTGV0dGVycy5wZGYADgBKACQARQBrAGwAbwBmAF8AZQB0AF8AYQBsAC0AMgAwADEAMwAtAEUAYwBvAGwAbwBnAHkAXwBMAGUAdAB0AGUAcgBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgB4VXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1RoZW9yZXRpY2FsIGVjb2xvZ3kvU3BlY2llcyBpbnRlcmFjdGlvbnMvRWtsb2ZfZXRfYWwtMjAxMy1FY29sb2d5X0xldHRlcnMucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAIsAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACsw==},
+	Bdsk-Url-1 = {https://onlinelibrary.wiley.com/doi/full/10.1111/ele.12081}}
+
+@article{Cirwill_2019,
+	Author = {Cirtwill, Alyssa R. and Eklӧf, Anna and Roslin, Tomas and Wootton, Kate and Gravel, Dominique},
+	Date-Added = {2019-10-29 11:17:13 +0100},
+	Date-Modified = {2019-11-06 12:06:18 +0100},
+	Doi = {10.1111/2041-210X.13180},
+	Journal = {Methods in Ecology and Evolution},
+	Keywords = {Network inference, Bayesian networks},
+	Pages = {902--911},
+	Rating = {5},
+	Title = {A quantitative framework for investigating the reliability of empirical network construction},
+	Url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13180},
+	Volume = {10},
+	Year = {2019},
+	Bdsk-Url-1 = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13180},
+	Bdsk-Url-2 = {https://doi.org/10.1111/2041-210X.13180}}
+
+@article{Ponisio_2019,
+	Author = {Ponisio, Lauren C. and Valdovinos, Fernanda S. and Allhoff, Korinna T. and Gaiarsa, Mar{\'\i}lia P. and Barner, Allison and Guimar{\~a}es, Paulo R. and Hembry, David H. and Morrison, Beth and Gillespie, Rosemary},
+	Date-Added = {2019-10-29 11:16:36 +0100},
+	Date-Modified = {2019-10-29 11:20:49 +0100},
+	Doi = {10.3389/fevo.2019.00103},
+	Issn = {2296-701X},
+	Journal = {Frontiers in Ecology and Evolution},
+	Keywords = {Networks in ecology},
+	Month = {Apr},
+	Publisher = {Frontiers Media SA},
+	Title = {A Network Perspective for Community Assembly},
+	Url = {http://dx.doi.org/10.3389/fevo.2019.00103},
+	Volume = {7},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBuLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9UaGVvcmV0aWNhbCBlY29sb2d5L05ldHdvcmsvUG9uaXNpbyBldCBhbC4yMDE5IChGcm9udGllcnMgaW4gRWNvbG9neSBhbmQgRXZvbHV0aW9uKS5wZGZPEQJaAAAAAAJaAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fUG9uaXNpbyBldCBhbC4yMDE5I0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAAB05ldHdvcmsAAAIAhC86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlRoZW9yZXRpY2FsIGVjb2xvZ3k6TmV0d29yazpQb25pc2lvIGV0IGFsLjIwMTkgKEZyb250aWVycyBpbiBFY29sb2d5IGFuZCBFdm9sdXRpb24pLnBkZgAOAHgAOwBQAG8AbgBpAHMAaQBvACAAZQB0ACAAYQBsAC4AMgAwADEAOQAgACgARgByAG8AbgB0AGkAZQByAHMAIABpAG4AIABFAGMAbwBsAG8AZwB5ACAAYQBuAGQAIABFAHYAbwBsAHUAdABpAG8AbgApAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgCCVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1RoZW9yZXRpY2FsIGVjb2xvZ3kvTmV0d29yay9Qb25pc2lvIGV0IGFsLjIwMTkgKEZyb250aWVycyBpbiBFY29sb2d5IGFuZCBFdm9sdXRpb24pLnBkZgATAAEvAAAVAAIADP//AAAACAANABoAJACVAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAvM=}}
+
+@article{Pichler_2019,
+	Author = {{Pichler}, Maximilian and {Boreux}, Virginie and {Klein}, Alexand ra-Maria and {Schleuning}, Matthias and {Hartig}, Florian},
+	Date-Added = {2019-10-29 11:15:27 +0100},
+	Date-Modified = {2019-11-06 11:45:34 +0100},
+	Doi = {https://doi.org/10.1111/2041-210X.13329},
+	Journal = {Methods in Ecology and Evolution},
+	Keywords = {Machine learning, Network inference},
+	Rating = {5},
+	Title = {{Machine learning algorithms to infer trait matching and predict species interactions in ecological networks}},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBMLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTWFjaGluZSBsZWFybmluZy9QaWNobGVyIGV0IGFsLiAyMDE5LnBkZk8RAdYAAAAAAdYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////xdQaWNobGVyIGV0IGFsLiAyMDE5LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAMABAAACiBjdQAAAAAAAAAAAAAAAAAQTWFjaGluZSBsZWFybmluZwACAGIvOlVzZXJzOmFib3llOkRvY3VtZW50czpCb3Vsb3Q6QmlibGlvZ3JhcGhpZTpTdGF0aXN0aXF1ZXM6TWFjaGluZSBsZWFybmluZzpQaWNobGVyIGV0IGFsLiAyMDE5LnBkZgAOADAAFwBQAGkAYwBoAGwAZQByACAAZQB0ACAAYQBsAC4AIAAyADAAMQA5AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBgVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1N0YXRpc3RpcXVlcy9NYWNoaW5lIGxlYXJuaW5nL1BpY2hsZXIgZXQgYWwuIDIwMTkucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAHMAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACTQ==},
+	Bdsk-Url-1 = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13329}}
+
+@article{Hui_2016,
+	Abstract = {Summary Model-based methods have emerged as a powerful approach for analysing multivariate abundance data in community ecology. Key applications include model-based ordination, modelling the various sources of correlations across species, and making inferences while accounting for these between species correlations. boral (version 0.9.1, licence GPL-2) is an r package available on cran for model-based analysis of multivariate abundance data, with estimation performed using Bayesian Markov chain Monte Carlo methods. A key feature of the boral package is the ability to incorporate latent variables as a parsimonious method of modelling between species correlation. Pure latent variable models offer a model-based approach to unconstrained ordination, for visualizing sites and the indicator species characterizing them on a low-dimensional plot. Correlated response models consist of fitting generalized linear models to each species, while including latent variables to account for residual correlation between species, for example, due to unmeasured covariates.},
+	Author = {Hui, Francis K.C.},
+	Date-Added = {2019-10-29 11:14:37 +0100},
+	Date-Modified = {2019-10-29 11:46:26 +0100},
+	Doi = {10.1111/2041-210X.12514},
+	Eprint = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12514},
+	Journal = {Methods in Ecology and Evolution},
+	Keywords = {LVM, R package, Network inference},
+	Number = {6},
+	Pages = {744-750},
+	Read = {1},
+	Title = {boral -- Bayesian Ordination and Regression Analysis of Multivariate Abundance Data in r},
+	Url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.12514},
+	Volume = {7},
+	Year = {2016},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBRLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvSHVpLTIwMTYtTWV0aG9kc19pbl9FY29sb2d5X2FuZF9Fdm9sdXRpb24ucGRmTxECCgAAAAACCgACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0h1aS0yMDE2LU1ldGhvZHNfaSNGRkZGRkZGRi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAwADAAAKIGN1AAAAAAAAAAAAAAAAAAxTdGF0aXN0aXF1ZXMAAgBnLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6U3RhdGlzdGlxdWVzOkh1aS0yMDE2LU1ldGhvZHNfaW5fRWNvbG9neV9hbmRfRXZvbHV0aW9uLnBkZgAADgBcAC0ASAB1AGkALQAyADAAMQA2AC0ATQBlAHQAaABvAGQAcwBfAGkAbgBfAEUAYwBvAGwAbwBnAHkAXwBhAG4AZABfAEUAdgBvAGwAdQB0AGkAbwBuAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBlVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1N0YXRpc3RpcXVlcy9IdWktMjAxNi1NZXRob2RzX2luX0Vjb2xvZ3lfYW5kX0V2b2x1dGlvbi5wZGYAABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAHgAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAChg==},
+	Bdsk-Url-1 = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.12514},
+	Bdsk-Url-2 = {https://doi.org/10.1111/2041-210X.12514},
+	Bdsk-Url-3 = {https://www.youtube.com/watch?v=XmrVVMG1HXI}}
+
+@Article{Ovaskainen_2017b,
+  author        = {Ovaskainen, Otso and Tikhonov, Gleb and Dunson, David and Gr{\o}tan, Vidar and Engen, Steinar and S{\ae}ther, Bernt-Erik and Abrego, Nerea},
+  title         = {How are species interactions structured in species-rich communities? A new method for analysing time-series data},
+  journal       = {Proceedings of the Royal Society B: Biological Sciences},
+  year          = {2017},
+  volume        = {284},
+  number        = {1855},
+  pages         = {20170768},
+  doi           = {10.1098/rspb.2017.0768},
+  eprint        = {https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2017.0768},
+  url           = {https://royalsocietypublishing.org/doi/abs/10.1098/rspb.2017.0768},
+  abstract      = { Estimation of intra- and interspecific interactions from time-series on species-rich communities is challenging due to the high number of potentially interacting species pairs. The previously proposed sparse interactions model overcomes this challenge by assuming that most species pairs do not interact. We propose an alternative model that does not assume that any of the interactions are necessarily zero, but summarizes the influences of individual species by a small number of community-level drivers. The community-level drivers are defined as linear combinations of species abundances, and they may thus represent e.g. the total abundance of all species or the relative proportions of different functional groups. We show with simulated and real data how our approach can be used to compare different hypotheses on community structure. In an empirical example using aquatic microorganisms, the community-level drivers model clearly outperformed the sparse interactions model in predicting independent validation data. },
+  bdsk-url-1    = {https://royalsocietypublishing.org/doi/abs/10.1098/rspb.2017.0768},
+  bdsk-url-2    = {https://doi.org/10.1098/rspb.2017.0768},
+  date-added    = {2019-10-29 11:13:01 +0100},
+  date-modified = {2019-10-29 11:46:19 +0100},
+  keywords      = {HMSC, Network inference},
+}
+
+@InProceedings{Chiquet_2019,
+  author        = {Chiquet, Julien and Robin, Stephane and Mariadassou, Mahendra},
+  title         = {Variational Inference for sparse network reconstruction from count data},
+  booktitle     = {Proceedings of the 36th International Conference on Machine Learning},
+  year          = {2019},
+  editor        = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume        = {97},
+  series        = {Proceedings of Machine Learning Research},
+  publisher     = {PMLR},
+  month         = {09--15 Jun},
+  pages         = {1162--1171},
+  url           = {http://proceedings.mlr.press/v97/chiquet19a.html},
+  abstract      = {Networks provide a natural yet statistically grounded way to depict and understand how a set of entities interact. However, in many situations interactions are not directly observed and the network needs to be reconstructed based on observations collected for each entity. Our work focuses on the situation where these observations consist of counts. A typical example is the reconstruction of an ecological network based on abundance data. In this setting, the abundance of a set of species is collected in a series of samples and/or environments and we aim at inferring direct interactions between the species. The abundances at hand can be, for example, direct counts of individuals (ecology of macro-organisms) or read counts resulting from metagenomic sequencing (microbial ecology). Whatever the approach chosen to infer such a network, it has to account for the peculiaraties of the data at hand. The first, obvious one, is that the data are counts, i.e. non continuous. Also, the observed counts often vary over many orders of magnitude and are more dispersed than expected under a simple model, such as the Poisson distribution. The observed counts may also result from different sampling efforts in each sample and/or for each entity, which hampers direct comparison. Furthermore, because the network is supposed to reveal only direct interactions, it is highly desirable to account for covariates describing the environment to avoid spurious edges. Many methods of network reconstruction from count data have been proposed. In the context of microbial ecology, most methods (SparCC, REBACCA, SPIEC-EASI, gCODA, BanOCC) rely on a two-step strategy: transform the counts to pseudo Gaussian observations using simple transforms before moving back to the setting of Gaussian Graphical Models, for which state of the art methods exist to infer the network, but only in a Gaussian world. In this work, we consider instead a full-fledged probabilistic model with a latent layer where the counts follow Poisson distributions, conditional to latent (hidden) Gaussian correlated variables. In this model, known as Poisson log-normal (PLN), the dependency structure is completely captured by the latent layer and we model counts, rather than transformations thereof. To our knowledge, the PLN framework is quite new and has only been used by two other recent methods (Mint and plnDAG) to reconstruct networks from count data. In this work, we use the same mathematical framework but adopt a different optimization strategy which alleviates the whole optimization process. We also fully exploit the connection between the PLN framework and generalized linear models to account for the peculiarities of microbiological data sets. The network inference step is done as usual by adding sparsity inducing constraints on the inverse covariance matrix of the latent Gaussian vector to select only the most important interactions between species. Unlike the usual Gaussian setting, the penalized likelihood is generally not tractable in this framework. We resort instead to a variational approximation for parameter inference and solve the corresponding optimization problem by alternating a gradient descent on the variational parameters and a graphical-Lasso step on the covariance matrix. We also select the sparsity parameter using the resampling-based StARS procedure. We show that the sparse PLN approach has better performance than existing methods on simulated datasets and that it extracts relevant signal from microbial ecology datasets. We also show that the inference scales to datasets made up of hundred of species and samples, in line with other methods in the field. In short, our contributions to the field are the following: we extend the use of PLN distributions in network inference by (i) accounting for covariates and offset and thus removing some spurious edges induced by confounding factors, (ii) accounting for different sampling effort to integrate data sets from different sources and thus infer interactions between different types of organisms (e.g. bacteria - fungi), (iii) developing an inference procedure based on the iterative optimization of a well defined objective function. Our objective function is a provable lower bound of the observed likelihood and our procedure accounts for the uncertainty associated with the estimation of the latent variable, unlike the algorithm presented in Mint and plnDAG.},
+  address       = {Long Beach, California, USA},
+  bdsk-url-1    = {http://proceedings.mlr.press/v97/chiquet19a.html},
+  date-added    = {2019-10-29 11:10:42 +0100},
+  date-modified = {2019-10-29 11:45:04 +0100},
+  file          = {chiquet19a.pdf:http\://proceedings.mlr.press/v97/chiquet19a/chiquet19a.pdf:PDF},
+  keywords      = {Variational inference, Network inference},
+}
+
+@article{Momal_2020,
+author = {Momal, Raphaëlle and Robin, Stéphane and Ambroise, Christophe},
+title = {Tree-based inference of species interaction networks from abundance data},
+journal = {Methods in Ecology and Evolution},
+volume = {11},
+number = {5},
+pages = {621-632},
+keywords = {abundance data, covariates adjustment, EM algorithm, graphical models, matrix tree theorem, Poisson log-normal model, species interaction network},
+doi = {10.1111/2041-210X.13380},
+url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13380},
+eprint = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.13380},
+abstract = {Abstract The behaviour of ecological systems mainly relies on the interactions between the species it involves. We consider the problem of inferring the species interaction network from abundance data. To be relevant, any network inference methodology needs to handle count data and to account for possible environmental effects. It also needs to distinguish between direct interactions and indirect associations and graphical models provide a convenient framework for this purpose. A simulation study shows that the proposed methodology compares well with state-of-the-art approaches, even when the underlying graph strongly differs from a tree. The analysis of two datasets highlights the influence of covariates on the inferred network. Accounting for covariates is critical to avoid spurious edges. The proposed approach could be extended to perform network comparison or to look for missing species.},
+year = {2020}
+}
+
+
+@article{Norberg_2020,
+	Abstract = {Abstract A large array of species distribution model (SDM) approaches have been developed for explaining and predicting the occurrences of individual species or species assemblages. Given the wealth of existing models, it is unclear which models perform best for interpolation or extrapolation of existing data sets, particularly when one is concerned with species assemblages. We compared the predictive performance of 33 variants of 15 widely applied and recently emerged SDMs in the context of multispecies data, including both joint SDMs that model multiple species together, and stacked SDMs that model each species individually combining the predictions afterwards. We offer a comprehensive evaluation of these SDM approaches by examining their performance in predicting withheld empirical validation data of different sizes representing five different taxonomic groups, and for prediction tasks related to both interpolation and extrapolation. We measure predictive performance by twelve measures of accuracy, discrimination power, calibration, and precision of predictions, for the biological levels of species occurrence, species richness, and community composition. Our results show large variation among the models in their predictive performance, especially for communities comprising many species that are rare. The results do not reveal any major trade-offs among measures of model performance; the same models performed generally well in terms of accuracy, discrimination, and calibration, and for the biological levels of individual species, species richness, and community composition. In contrast, the models that gave the most precise predictions were not well calibrated, suggesting that poorly performing models can make overconfident predictions. However, none of the models performed well for all prediction tasks. As a general strategy, we therefore propose that researchers fit a small set of models showing complementary performance, and then apply a cross-validation procedure involving separate data to establish which of these models performs best for the goal of the study. This article is protected by copyright. All rights reserved.},
+	Author = {Norberg, Anna and Abrego, Nerea and Blanchet, F. Guillaume and Adler, Frederick R. and Anderson, Barbara J. and Anttila, Jani and Ara{\'u}jo, Miguel B. and Dallas, Tad and Dunson, David and Elith, Jane and Foster, Scott D. and Fox, Richard and Franklin, Janet and Godsoe, William and Guisan, Antoine and O'Hara, Bob and Hill, Nicole A. and Holt, Robert D. and Hui, Francis K.C. and Husby, Magne and K{\aa}l{\aa}s, John Atle and Lehikoinen, Aleksi and Luoto, Miska and Mod, Heidi K. and Newell, Graeme and Renner, Ian and Roslin, Tomas and Soininen, Janne and Thuiller, Wilfried and Vanhatalo, Jarno and Warton, David and White, Matt and Zimmermann, Niklaus E. and Gravel, Dominique and Ovaskainen, Otso},
+	Date-Added = {2019-10-29 10:38:55 +0100},
+	Date-Modified = {2019-10-29 11:46:37 +0100},
+	Doi = {10.1002/ecm.1370},
+	Eprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecm.1370},
+	Journal = {Ecological Monographs},
+	Keywords = {JSDM, HMSC, Network inference},
+	Pages = {e01370},
+	Rating = {5},
+	Title = {A comprehensive evaluation of predictive performance of 33 species distribution models at species and community levels},
+	Url = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1370},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBQLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTm9yYmVyZ19ldF9hbC0yMDE5LUVjb2xvZ2ljYWxfTW9ub2dyYXBocy5wZGZPEQIEAAAAAAIEAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fTm9yYmVyZ19ldF9hbC0yMDE5I0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAMAAAogY3UAAAAAAAAAAAAAAAAADFN0YXRpc3RpcXVlcwACAGYvOlVzZXJzOmFib3llOkRvY3VtZW50czpCb3Vsb3Q6QmlibGlvZ3JhcGhpZTpTdGF0aXN0aXF1ZXM6Tm9yYmVyZ19ldF9hbC0yMDE5LUVjb2xvZ2ljYWxfTW9ub2dyYXBocy5wZGYADgBaACwATgBvAHIAYgBlAHIAZwBfAGUAdABfAGEAbAAtADIAMAAxADkALQBFAGMAbwBsAG8AZwBpAGMAYQBsAF8ATQBvAG4AbwBnAHIAYQBwAGgAcwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAZFVzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTm9yYmVyZ19ldF9hbC0yMDE5LUVjb2xvZ2ljYWxfTW9ub2dyYXBocy5wZGYAEwABLwAAFQACAAz//wAAAAgADQAaACQAdwAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAJ/},
+	Bdsk-Url-1 = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1370},
+	Bdsk-Url-2 = {https://doi.org/10.1002/ecm.1370}}
+
+@Article{Ovaskainen_2017a,
+  author        = {Ovaskainen, Otso and Tikhonov, Gleb and Norberg, Anna and Guillaume Blanchet, F. and Duan, Leo and Dunson, David and Roslin, Tomas and Abrego, Nerea},
+  title         = {How to make more out of community data? A conceptual framework and its implementation as models and software},
+  journal       = {Ecology Letters},
+  year          = {2017},
+  editor        = {Chave, JeromeEditor},
+  volume        = {20},
+  number        = {5},
+  month         = {Mar},
+  pages         = {561--576},
+  issn          = {1461-023X},
+  doi           = {10.1111/ele.12757},
+  url           = {http://dx.doi.org/10.1111/ele.12757},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBbLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9PdmFza2FpbmVuIGV0IGFsLiAyMDE3IChFY29sb2d5IExldHRlcnMpLnBkZk8RAhoAAAAAAhoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9PdmFza2FpbmVuIGV0IGFsLiAjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAFBERiAAAAAAAAMABAAACiBjdQAAAAAAAAAAAAAAAAAKTFZNICYgSFNNQwACAHEvOlVzZXJzOmFib3llOkRvY3VtZW50czpCb3Vsb3Q6QmlibGlvZ3JhcGhpZTpTdGF0aXN0aXF1ZXM6TFZNICYgSFNNQzpPdmFza2FpbmVuIGV0IGFsLiAyMDE3IChFY29sb2d5IExldHRlcnMpLnBkZgAADgBaACwATwB2AGEAcwBrAGEAaQBuAGUAbgAgAGUAdAAgAGEAbAAuACAAMgAwADEANwAgACgARQBjAG8AbABvAGcAeQAgAEwAZQB0AHQAZQByAHMAKQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAb1VzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9PdmFza2FpbmVuIGV0IGFsLiAyMDE3IChFY29sb2d5IExldHRlcnMpLnBkZgAAEwABLwAAFQACAAz//wAAAAgADQAaACQAggAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAKg},
+  bdsk-file-2   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAwLi4vLi4vLi4vQ2h1bmtfY29kZS9IU01DICYgTFZNL0hNU0NfdmlnbmV0dGUucGRmTxEBjAAAAAABjAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////EUhNU0NfdmlnbmV0dGUucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAwADAAAKIGN1AAAAAAAAAAAAAAAAAApIU01DICYgTFZNAAIARi86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpDaHVua19jb2RlOkhTTUMgJiBMVk06SE1TQ192aWduZXR0ZS5wZGYADgAkABEASABNAFMAQwBfAHYAaQBnAG4AZQB0AHQAZQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIARFVzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQ2h1bmtfY29kZS9IU01DICYgTFZNL0hNU0NfdmlnbmV0dGUucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAFcAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAAB5w==},
+  bdsk-url-1    = {https://onlinelibrary.wiley.com/doi/full/10.1111/ele.12757},
+  date-added    = {2019-10-29 10:36:50 +0100},
+  date-modified = {2019-10-29 11:46:15 +0100},
+  keywords      = {HMSC, Network inference},
+  publisher     = {Wiley},
+}
+
+@Article{warton2015,
+  author        = {Warton, David I and Blanchet, F Guillaume and O'Hara, Robert B and Ovaskainen, Otso and Taskinen, Sara and Walker, Steven C and Hui, Francis KC},
+  title         = {So many variables: joint modeling in community ecology},
+  journal       = {Trends in Ecology \& Evolution},
+  year          = {2015},
+  volume        = {30},
+  number        = {12},
+  pages         = {766--779},
+  doi           = {10.1016/j.tree.2015.09.007},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBbLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9XYXJ0b24gZXQgYWxfcmV2aWV3IG9uIGxhdGVudCBvcmRpbmF0aW9uLnBkZk8RAhoAAAAAAhoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9XYXJ0b24gZXQgYWxfcmV2aWUjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAMABAAACiBjdQAAAAAAAAAAAAAAAAAKTFZNICYgSFNNQwACAHEvOlVzZXJzOmFib3llOkRvY3VtZW50czpCb3Vsb3Q6QmlibGlvZ3JhcGhpZTpTdGF0aXN0aXF1ZXM6TFZNICYgSFNNQzpXYXJ0b24gZXQgYWxfcmV2aWV3IG9uIGxhdGVudCBvcmRpbmF0aW9uLnBkZgAADgBaACwAVwBhAHIAdABvAG4AIABlAHQAIABhAGwAXwByAGUAdgBpAGUAdwAgAG8AbgAgAGwAYQB0AGUAbgB0ACAAbwByAGQAaQBuAGEAdABpAG8AbgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAb1VzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9XYXJ0b24gZXQgYWxfcmV2aWV3IG9uIGxhdGVudCBvcmRpbmF0aW9uLnBkZgAAEwABLwAAFQACAAz//wAAAAgADQAaACQAggAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAKg},
+  bdsk-url-1    = {https://www.sciencedirect.com/science/article/pii/S0169534715002402},
+  date-added    = {2019-10-29 10:35:23 +0100},
+  date-modified = {2019-10-29 11:45:16 +0100},
+  keywords      = {LVM, Network inference},
+  publisher     = {Elsevier},
+}
+
+@article{Wang_2012,
+	Author = {Wang, Yi and Naumann, Ulrike and Wright, Stephen T. and Warton, David I.},
+	Date-Added = {2019-10-29 10:34:57 +0100},
+	Date-Modified = {2019-10-29 11:45:21 +0100},
+	Doi = {10.1111/j.2041-210x.2012.00190.x},
+	Issn = {2041-210X},
+	Journal = {Methods in Ecology and Evolution},
+	Keywords = {LVM, R package, Network inference},
+	Month = {Feb},
+	Number = {3},
+	Pages = {471--474},
+	Publisher = {Wiley},
+	Title = {mvabund- an R package for model-based analysis of multivariate abundance data},
+	Url = {http://dx.doi.org/10.1111/j.2041-210X.2012.00190.x},
+	Volume = {3},
+	Year = {2012},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBYLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvV2FuZ19ldF9hbC0yMDEyLU1ldGhvZHNfaW5fRWNvbG9neV9hbmRfRXZvbHV0aW9uLnBkZk8RAiQAAAAAAiQAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9XYW5nX2V0X2FsLTIwMTItTWUjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAMAAwAACiBjdQAAAAAAAAAAAAAAAAAMU3RhdGlzdGlxdWVzAAIAbi86VXNlcnM6YWJveWU6RG9jdW1lbnRzOkJvdWxvdDpCaWJsaW9ncmFwaGllOlN0YXRpc3RpcXVlczpXYW5nX2V0X2FsLTIwMTItTWV0aG9kc19pbl9FY29sb2d5X2FuZF9Fdm9sdXRpb24ucGRmAA4AagA0AFcAYQBuAGcAXwBlAHQAXwBhAGwALQAyADAAMQAyAC0ATQBlAHQAaABvAGQAcwBfAGkAbgBfAEUAYwBvAGwAbwBnAHkAXwBhAG4AZABfAEUAdgBvAGwAdQB0AGkAbwBuAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgBsVXNlcnMvYWJveWUvRG9jdW1lbnRzL0JvdWxvdC9CaWJsaW9ncmFwaGllL1N0YXRpc3RpcXVlcy9XYW5nX2V0X2FsLTIwMTItTWV0aG9kc19pbl9FY29sb2d5X2FuZF9Fdm9sdXRpb24ucGRmABMAAS8AABUAAgAM//8AAAAIAA0AGgAkAH8AAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAACpw==},
+	Bdsk-Url-1 = {https://www.youtube.com/watch?v=KnPkH6d89l4},
+	Bdsk-Url-2 = {https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2012.00190.x}}
+
+@article{Niku_2019,
+	Abstract = {Abstract There has been rapid development in tools for multivariate analysis based on fully specified statistical models or `joint models'. One approach attracting a lot of attention is generalized linear latent variable models (GLLVMs). However, software for fitting these models is typically slow and not practical for large datasets. The r package gllvm offers relatively fast methods to fit GLLVMs via maximum likelihood, along with tools for model checking, visualization and inference. The main advantage of the package over other implementations is speed, for example, being two orders of magnitude faster, and capable of handling thousands of response variables. These advances come from using variational approximations to simplify the likelihood expression to be maximized, automatic differentiation software for model-fitting (via the TMB package) and careful choice of initial values for parameters. Examples are used to illustrate the main features and functionality of the package, such as constrained or unconstrained ordination, including functional traits in `fourth corner' models, and (if the number of environmental coefficients is not large) make inferences about environmental associations.},
+	Author = {Niku, Jenni and Hui, Francis K. C. and Taskinen, Sara and Warton, David I.},
+	Date-Added = {2019-10-29 10:34:26 +0100},
+	Date-Modified = {2019-10-29 11:46:22 +0100},
+	Doi = {10.1111/2041-210X.13303},
+	Eprint = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.13303},
+	Journal = {Methods in Ecology and Evolution},
+	Keywords = {LVM, R package, Network inference},
+	Title = {gllvm: Fast analysis of multivariate abundance data with generalized linear latent variable models in r},
+	Url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13303},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBKLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9OaWt1ICBldCBhbC4gMjAxOSAoTUVFKS5wZGZPEQHUAAAAAAHUAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8bTmlrdSAgZXQgYWwuIDIwMTkgKE1FRSkucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAABQREYgAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAACkxWTSAmIEhTTUMAAgBgLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6U3RhdGlzdGlxdWVzOkxWTSAmIEhTTUM6TmlrdSAgZXQgYWwuIDIwMTkgKE1FRSkucGRmAA4AOAAbAE4AaQBrAHUAIAAgAGUAdAAgAGEAbAAuACAAMgAwADEAOQAgACgATQBFAEUAKQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAXlVzZXJzL2Fib3llL0RvY3VtZW50cy9Cb3Vsb3QvQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9OaWt1ICBldCBhbC4gMjAxOSAoTUVFKS5wZGYAEwABLwAAFQACAAz//wAAAAgADQAaACQAcQAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAJJ},
+	Bdsk-Url-1 = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13303},
+	Bdsk-Url-2 = {https://doi.org/10.1111/2041-210X.13303}}
+
+@article{Thorson_2016,
+	Author = {Thorson, James T. and Ianelli, James N. and Larsen, Elise A. and Ries, Leslie and Scheuerell, Mark D. and Szuwalski, Cody and Zipkin, Elise F.},
+	Date-Added = {2019-10-29 10:31:46 +0100},
+	Date-Modified = {2019-10-29 11:46:07 +0100},
+	Doi = {10.1111/geb.12464},
+	Issn = {1466-822X},
+	Journal = {Global Ecology and Biogeography},
+	Keywords = {JDSDM, Network inference},
+	Month = {May},
+	Number = {9},
+	Pages = {1144--1158},
+	Publisher = {Wiley},
+	Title = {Joint dynamic species distribution models: a tool for community ordination and spatio-temporal monitoring},
+	Url = {http://dx.doi.org/10.1111/geb.12464},
+	Volume = {25},
+	Year = {2016},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBlLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9UaG9yc29uX2V0X2FsLTIwMTYtR2xvYmFsX0Vjb2xvZ3lfYW5kX0Jpb2dlb2dyYXBoeS5wZGZPEQJCAAAAAAJCAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fVGhvcnNvbl9ldF9hbC0yMDE2I0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAACkxWTSAmIEhTTUMAAgB7LzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6U3RhdGlzdGlxdWVzOkxWTSAmIEhTTUM6VGhvcnNvbl9ldF9hbC0yMDE2LUdsb2JhbF9FY29sb2d5X2FuZF9CaW9nZW9ncmFwaHkucGRmAAAOAG4ANgBUAGgAbwByAHMAbwBuAF8AZQB0AF8AYQBsAC0AMgAwADEANgAtAEcAbABvAGIAYQBsAF8ARQBjAG8AbABvAGcAeQBfAGEAbgBkAF8AQgBpAG8AZwBlAG8AZwByAGEAcABoAHkALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAHlVc2Vycy9hYm95ZS9Eb2N1bWVudHMvQm91bG90L0JpYmxpb2dyYXBoaWUvU3RhdGlzdGlxdWVzL0xWTSAmIEhTTUMvVGhvcnNvbl9ldF9hbC0yMDE2LUdsb2JhbF9FY29sb2d5X2FuZF9CaW9nZW9ncmFwaHkucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJACMAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAtI=},
+	Bdsk-Url-1 = {https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.12464}}
+
+@Article{Tikhonov_2019b,
+  author        = {Tikhonov, Gleb and Opedal, Oystein and Abrego, Nerea and Lehikoinen, Aleksi and Ovaskainen, Otso},
+  title         = {Joint species distribution modelling with HMSC-R},
+  journal       = {bioRxiv},
+  year          = {2019},
+  doi           = {10.1101/603217},
+  eprint        = {https://www.biorxiv.org/content/early/2019/04/09/603217.full.pdf},
+  url           = {https://www.biorxiv.org/content/early/2019/04/09/603217},
+  abstract      = {Joint Species Distribution Modelling (JSDM) is becoming an increasingly popular statistical method for analyzing data in community ecology. JSDM allow the integration of community ecology data with data on environmental covariates, species traits, phylogenetic relationships, and the spatio-temporal context of the study, providing predictive insights into community assembly processes from non-manipulative observational data of species communities. Hierarchical Modelling of Species Communities (HMSC) is a general and flexible framework for fitting JSDMs, yet its full range of functionality has remained restricted to Matlab users only. To make HMSC accessible to the wider community of ecologists, we introduce HMSC-R 3.0, a user-friendly R implementation of the framework described in Ovaskainen et al (Ecology Letters, 20 (5), 561-576, 2017) and further extended in several later publications. We illustrate the use of the package by providing a series of five vignettes that apply HMSC-R 3.0 to simulated and real data. HMSC-R applications to simulated data involve single-species models, models of small communities, and models of large species communities. They demonstrate the estimation of species responses to environmental covariates and how these depend on species traits, as well as the estimation of residual species associations. They further demonstrate how HMSC-R can be applied to normally distributed data, count data, and presence-absence data. The real data consist of bird counts in a spatio-temporally structured dataset, environmental covariates, species traits and phylogenetic relationships. The vignettes demonstrate how to construct and fit many kinds of models, how to examine MCMC convergence, how to examine the explanatory and predictive powers of the models, how to assess parameter estimates, and how to make predictions. The package, along with the extended vignettes, makes JSDM fitting and post-processing easily accessible to ecologists familiar with R.},
+  annote        = {{\`A} comparer avec : https://github.com/guiblanchet/HMSC},
+  bdsk-file-1   = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBNLi4vLi4vLi4vQmlibGlvZ3JhcGhpZS9TdGF0aXN0aXF1ZXMvTFZNICYgSFNNQy9UaWtob25vdiBldCBhbC4gKGJpb2FyeGl2KS5wZGZPEQHiAAAAAAHiAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8eVGlraG9ub3YgZXQgYWwuIChiaW9hcnhpdikucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAADAAQAAAogY3UAAAAAAAAAAAAAAAAACkxWTSAmIEhTTUMAAgBjLzpVc2VyczphYm95ZTpEb2N1bWVudHM6Qm91bG90OkJpYmxpb2dyYXBoaWU6U3RhdGlzdGlxdWVzOkxWTSAmIEhTTUM6VGlraG9ub3YgZXQgYWwuIChiaW9hcnhpdikucGRmAAAOAD4AHgBUAGkAawBoAG8AbgBvAHYAIABlAHQAIABhAGwALgAgACgAYgBpAG8AYQByAHgAaQB2ACkALgBwAGQAZgAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASAGFVc2Vycy9hYm95ZS9Eb2N1bWVudHMvQm91bG90L0JpYmxpb2dyYXBoaWUvU3RhdGlzdGlxdWVzL0xWTSAmIEhTTUMvVGlraG9ub3YgZXQgYWwuIChiaW9hcnhpdikucGRmAAATAAEvAAAVAAIADP//AAAACAANABoAJAB0AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAlo=},
+  bdsk-url-1    = {https://www.biorxiv.org/content/early/2019/04/09/603217},
+  bdsk-url-2    = {https://doi.org/10.1101/603217},
+  date-added    = {2019-10-29 10:30:56 +0100},
+  date-modified = {2019-10-29 11:46:03 +0100},
+  elocation-id  = {603217},
+  keywords      = {HMSC, R package, Network inference},
+  publisher     = {Cold Spring Harbor Laboratory},
+  rating        = {5},
+}
+
+@Article{Stark_2018,
+  author    = {Keila A Stark and Patrick L Thompson and Jennifer Yakimishyn and Lynn Lee and Mary I O'Connor},
+  title     = {Regional connectivity, local environmental conditions, and biotic interactions jointly structure a temperate seagrass epifaunal metacommunity},
+  year      = {2018},
+  month     = {dec},
+  doi       = {10.1101/482406},
+  url       = {https://doi.org/10.1101%2F482406},
+  publisher = {Cold Spring Harbor Laboratory},
+}
+
+@article{Bezanson_2017,
+  title={Julia: A fresh approach to numerical computing},
+  author={Bezanson, Jeff and Edelman, Alan and Karpinski, Stefan and Shah, Viral B},
+  journal={SIAM review},
+  volume={59},
+  number={1},
+  pages={65--98},
+  year={2017},
+  publisher={SIAM},
+  url={https://doi.org/10.1137/141000671}
+}
+
+@Manual{RCoreTeam_2019,
+  title = {R: A Language and Environment for Statistical Computing},
+  author = {{R Core Team}},
+  organization = {R Foundation for Statistical Computing},
+  address = {Vienna, Austria},
+  year = {2019},
+  url = {https://www.R-project.org/},
+  }
+
+@book{Lecointre_2001,
+  title={Classification phylog{\'e}n{\'e}tique du vivant},
+  author={Lecointre, Guillaume and Le Guyader, Herv{\'e}},
+  year={2001},
+  edition={3},
+  publisher={Belin}
+}
+
+@article{Fleiss1973,
+	author = {Joseph L. Fleiss and Jacob Cohen},
+	title ={The Equivalence of Weighted Kappa and the Intraclass Correlation Coefficient as Measures of Reliability},
+	journal = {Educational and Psychological Measurement},
+	volume = {33},
+	number = {3},
+	pages = {613-619},
+	year = {1973},
+	doi = {10.1177/001316447303300309},
+	URL = {https://doi.org/10.1177/001316447303300309},
+	eprint = {https://doi.org/10.1177/001316447303300309}
+}
+
+@Manual{Hmsc_2019,
+    title = {Hmsc: Hierarchical Model of Species Communities},
+    author = {Gleb Tikhonov and Otso Ovaskainen and Jari Oksanen and Melinda {de Jonge} and Oystein Opedal and Tad Dallas},
+    year = {2019},
+    note = {R package version 3.0-4},
+    url = {https://CRAN.R-project.org/package=Hmsc},
+}
+
+@Manual{Gllvm_2019,
+	title = {gllvm: Generalized Linear Latent Variable Models},
+    author = {Jenni Niku and Wesley Brooks and Riki Herliansyah and Francis K.C. Hui and Sara Taskinen and David I. Warton},
+    year = {2019},
+    note = {R package version 1.2.0},
+    url = {https://CRAN.R-project.org/package=gllvm},
+}
+
+@techreport{Rebent2016,
+  author    = {Derrien-Courtel, Sandrine and Androuin, Thibault and Ar Gall, Erwan and Aublet, Erwann and Bouriat, Alizé and Boyé, Aurélien and Broudin, Caroline and Catherine, Elodie and Decaris, François-Xavier and Derrien, René and Grall, Jacques and Houbin, Céline and Huber, Matthias and Le Duff, Michel and Le Gal, Aodren and Le Garrec, Vincent and Maguer, Marion and Perrier, Lucile and Thiébaut, Eric},
+  title     = {Le REBENT-II Bretagne - Surveillance du Benthos du littoral breton.},
+  year      = {2017},
+  url       = {http://www.stationmarinedeconcarneau.fr/sites/concarneau/files/atoms/files/rebent.bretagne2015-2016-rapportfinal-vf_tome1.pdf},
+  institution = {REBENT},
+  number = {Rapport final-Vf2-11/03/2019}
+}
+
+@article{Boye_2019a,
+	doi = {10.1111/ddi.12987},
+	url = {https://doi.org/10.1111%2Fddi.12987},
+	year = 2019,
+	month = {sep},
+	publisher = {Wiley},
+	volume = {25},
+	number = {12},
+	pages = {1879--1896},
+	author = {Aur{\'{e}}lien Boy{\'{e}} and {\'{E}}ric Thi{\'{e}}baut and Jacques Grall and Pierre Legendre and Caroline Broudin and C{\'{e}}line Houbin and Vincent Le Garrec and Marion Maguer and Gabin Droual and Olivier Gauthier},
+	title = {Trait-based approach to monitoring marine benthic data along 500 km of coastline},
+	journal = {Diversity and Distributions}
+}
+
+@article{Lefcheck_2019,
+	doi = {10.1111/conl.12645},
+	url = {https://doi.org/10.1111%2Fconl.12645},
+	year = 2019,
+	month = {mar},
+	publisher = {Wiley},
+	pages = {e12645},
+	author = {Jonathan S. Lefcheck and Brent B. Hughes and Andrew J. Johnson and Bruce W. Pfirrmann and Douglas B. Rasher and Ashley R. Smyth and Bethany L. Williams and Michael W. Beck and Robert J. Orth},
+	title = {Are~coastal habitats important nurseries? A meta-analysis},
+	journal = {Conservation Letters}
+}
+
+@article{McDevitt_Irwin_2016,
+	doi = {10.3354/meps11848},
+	url = {https://doi.org/10.3354%2Fmeps11848},
+	year = 2016,
+	month = {sep},
+	publisher = {Inter-Research Science Center},
+	volume = {557},
+	pages = {133--143},
+	author = {JM McDevitt-Irwin and JC Iacarella and JK Baum},
+	title = {Reassessing the nursery role of seagrass habitats from temperate to tropical regions: a meta-analysis},
+	journal = {Marine Ecology Progress Series}
+}
+
+@article{Hily_1999,
+	doi = {10.1016/s0764-4469(99)00112-2},
+	url = {https://doi.org/10.1016%2Fs0764-4469%2899%2900112-2},
+	year = 1999,
+	month = {dec},
+	publisher = {Elsevier {BV}},
+	volume = {322},
+	number = {12},
+	pages = {1121--1131},
+	author = {Christian Hily and Marc Bouteille},
+	title = {Modifications of the specific diversity and feeding guilds in an intertidal sediment colonized by an eelgrass meadow (Zostera marina) (Brittany, France)},
+	journal = {Comptes Rendus de l{\textquotesingle}Acad{\'{e}}mie des Sciences - Series {III} - Sciences de la Vie}
+}
+
+@article{Boye_2017,
+	doi = {10.1016/j.seares.2017.06.004},
+	url = {https://doi.org/10.1016%2Fj.seares.2017.06.004},
+	year = 2017,
+	month = {dec},
+	publisher = {Elsevier {BV}},
+	volume = {130},
+	pages = {107--122},
+	author = {Aur{\'{e}}lien Boy{\'{e}} and Pierre Legendre and Jacques Grall and Olivier Gauthier},
+	title = {Constancy despite variability: Local and regional macrofaunal diversity in intertidal seagrass beds},
+	journal = {Journal of Sea Research}
+}
+
+@article{Sunday_2016,
+	doi = {10.1038/nclimate3161},
+	url = {https://doi.org/10.1038%2Fnclimate3161},
+	year = 2016,
+	month = {nov},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {7},
+	number = {1},
+	pages = {81--85},
+	author = {Jennifer M. Sunday and Katharina E. Fabricius and Kristy J. Kroeker and Kathryn M. Anderson and Norah E. Brown and James P. Barry and Sean D. Connell and Sam Dupont and Brian Gaylord and Jason M. Hall-Spencer and Terrie Klinger and Marco Milazzo and Philip L. Munday and Bayden D. Russell and Eric Sanford and Vengatesen Thiyagarajan and Megan L. H. Vaughan and Stephen Widdicombe and Christopher D. G. Harley},
+	title = {Ocean acidification can mediate biodiversity shifts by changing biogenic habitat},
+	journal = {Nature Climate Change}
+}
+
+@article{Quillien_2017,
+	doi = {10.1017/s0025315416002010},
+	url = {https://doi.org/10.1017%2Fs0025315416002010},
+	year = 2017,
+	month = {jan},
+	publisher = {Cambridge University Press ({CUP})},
+	volume = {98},
+	number = {4},
+	pages = {699--712},
+	author = {N. Quillien and M. C. Nordström and H. Le Bris and E. Bonsdorff and J. Grall},
+	title = {Green tides on inter- and subtidal sandy shores: differential impacts on infauna and flatfish},
+	journal = {Journal of the Marine Biological Association of the United Kingdom}
+}
+
+@article{Waycott_2009,
+	doi = {10.1073/pnas.0905620106},
+	url = {https://doi.org/10.1073%2Fpnas.0905620106},
+	year = 2009,
+	month = {jul},
+	publisher = {Proceedings of the National Academy of Sciences},
+	volume = {106},
+	number = {30},
+	pages = {12377--12381},
+	author = {M. Waycott and C. M. Duarte and T. J. B. Carruthers and R. J. Orth and W. C. Dennison and S. Olyarnik and A. Calladine and J. W. Fourqurean and K. L. Heck and A. R. Hughes and G. A. Kendrick and W. J. Kenworthy and F. T. Short and S. L. Williams},
+	title = {Accelerating loss of seagrasses across the globe threatens coastal ecosystems},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@article{de_los_Santos_2019,
+	doi = {10.1038/s41467-019-11340-4},
+	url = {https://doi.org/10.1038%2Fs41467-019-11340-4},
+	year = 2019,
+	month = {jul},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {10},
+	number = {1},
+	author = {Carmen B. de los Santos and Dorte Krause-Jensen and Teresa Alcoverro and N{\'{u}}ria Marb{\`{a}} and Carlos M. Duarte and Marieke M. van Katwijk and Marta P{\'{e}}rez and Javier Romero and Jos{\'{e}} L. S{\'{a}}nchez-Lizaso and Guillem Roca and Emilia Jankowska and Jos{\'{e}} Lucas P{\'{e}}rez-Llor{\'{e}}ns and J{\'{e}}r{\^{o}}me Fournier and Monica Montefalcone and G{\'{e}}rard Pergent and Juan M. Ruiz and Susana Caba{\c{c}}o and Kevan Cook and Robert J. Wilkes and Frithjof E. Moy and Gregori Mu{\~{n}}oz-Ramos Trayter and Xavier Seglar Ara{\~{n}}{\'{o}} and Dick J. de Jong and Yolanda Fern{\'{a}}ndez-Torquemada and Isabelle Auby and Juan J. Vergara and Rui Santos},
+	title = {Recent trend reversal for declining European seagrass meadows},
+	journal = {Nature Communications}
+}
+
+@article{Defeo_2005,
+	doi = {10.3354/meps295001},
+	url = {https://doi.org/10.3354%2Fmeps295001},
+	year = 2005,
+	publisher = {Inter-Research Science Center},
+	volume = {295},
+	pages = {1--20},
+	author = {O Defeo and A McLachlan},
+	title = {Patterns, processes and regulatory mechanisms in sandy beach macrofauna: a multi-scale analysis},
+	journal = {Marine Ecology Progress Series}
+}
+
+@article{Defeo_2013,
+	doi = {10.1016/j.geomorph.2013.04.013},
+	url = {https://doi.org/10.1016%2Fj.geomorph.2013.04.013},
+	year = 2013,
+	month = {oct},
+	publisher = {Elsevier {BV}},
+	volume = {199},
+	pages = {106--114},
+	author = {Omar Defeo and Anton McLachlan},
+	title = {Global patterns in sandy beach macrofauna: Species richness, abundance, biomass and body size},
+	journal = {Geomorphology}
+}
+
+@article{Defeo_2017,
+	doi = {10.1111/geb.12588},
+	url = {https://doi.org/10.1111%2Fgeb.12588},
+	year = 2017,
+	month = {apr},
+	publisher = {Wiley},
+	volume = {26},
+	number = {7},
+	pages = {823--834},
+	author = {Omar Defeo and Carlos A. M. Barboza and Francisco R. Barboza and William H. Aeberhard and Tatiana M. B. Cabrini and Ricardo S. Cardoso and Leonardo Ortega and Viviane Skinner and Boris Worm},
+	title = {Aggregate patterns of macrofaunal diversity: An interocean comparison},
+	journal = {Global Ecology and Biogeography}
+}
+
+@article{Defeo_2009,
+	doi = {10.1016/j.ecss.2008.09.022},
+	url = {https://doi.org/10.1016%2Fj.ecss.2008.09.022},
+	year = 2009,
+	month = {jan},
+	publisher = {Elsevier {BV}},
+	volume = {81},
+	number = {1},
+	pages = {1--12},
+	author = {Omar Defeo and Anton McLachlan and David S. Schoeman and Thomas A. Schlacher and Jenifer Dugan and Alan Jones and Mariano Lastra and Felicita Scapini},
+	title = {Threats to sandy beach ecosystems: A review},
+	journal = {Estuarine, Coastal and Shelf Science}
+}
+
+@article{Jumars_2015,
+	doi = {10.1146/annurev-marine-010814-020007},
+	url = {https://doi.org/10.1146%2Fannurev-marine-010814-020007},
+	year = 2015,
+	month = {jan},
+	publisher = {Annual Reviews},
+	volume = {7},
+	number = {1},
+	pages = {497--520},
+	author = {Peter A. Jumars and Kelly M. Dorgan and Sara M. Lindsay},
+	title = {Diet of Worms Emended: An Update of Polychaete Feeding Guilds},
+	journal = {Annual Review of Marine Science}
+}
+
+@book{Ovaskainen_2020,
+	place={Cambridge},
+	series={Ecology, Biodiversity and Conservation},
+	title={Joint Species Distribution Modelling: With Applications in R},
+	publisher={Cambridge University Press},
+	author={Ovaskainen, Otso and Abrego, Nerea},
+	year={2020}, 
+	collection={Ecology, Biodiversity and Conservation}
+}
+
+@article{Araujo_2019,
+	doi = {10.1126/sciadv.aat4858},
+	url = {https://doi.org/10.1126%2Fsciadv.aat4858},
+	year = 2019,
+	month = {jan},
+	publisher = {American Association for the Advancement of Science ({AAAS})},
+	volume = {5},
+	number = {1},
+	pages = {eaat4858},
+	author = {Miguel B. Ara{\'{u}}jo and Robert P. Anderson and A. M{\'{a}}rcia Barbosa and Colin M. Beale and Carsten F. Dormann and Regan Early and Raquel A. Garcia and Antoine Guisan and Luigi Maiorano and Babak Naimi and Robert B. O'Hara and Niklaus E. Zimmermann and Carsten Rahbek},
+	title = {Standards for distribution models in biodiversity assessments},
+	journal = {Science Advances}
+}
+
+@article{Hutchinson_1957,
+	doi = {10.1101/sqb.1957.022.01.039},
+	url = {https://doi.org/10.1101%2Fsqb.1957.022.01.039},
+	year = 1957,
+	month = {jan},
+	publisher = {Cold Spring Harbor Laboratory},
+	volume = {22},
+	number = {0},
+	pages = {415--427},
+	author = {G. E. Hutchinson},
+	title = {Concluding Remarks},
+	journal = {Cold Spring Harbor Symposia on Quantitative Biology}
+}
+
+@Book{Elton_2001,
+	author = {Elton, Charles},
+	title = {Animal ecology},
+	publisher = {University of Chicago Press},
+	year = {2001},
+	address = {Chicago},
+	isbn = {978-0226206394}
+}
+
+@article{Grinnell_1917,
+	doi = {10.2307/4072271},
+	url = {https://doi.org/10.2307%2F4072271},
+	year = 1917,
+	month = {oct},
+	publisher = {Oxford University Press ({OUP})},
+	volume = {34},
+	number = {4},
+	pages = {427--433},
+	author = {Joseph Grinnell},
+	title = {The Niche-Relationships of the California Thrasher},
+	journal = {The Auk}
+}
+
+@Manual{dismo,
+	title = {dismo: Species Distribution Modeling},
+    author = {Robert J. Hijmans and Steven Phillips and John Leathwick and Jane Elith},
+    year = {2017},
+    note = {R package version 1.1-4},
+    url = {https://CRAN.R-project.org/package=dismo},
+}
+
+@Manual{gbm,
+    title = {gbm: Generalized Boosted Regression Models},
+    author = {Brandon Greenwell and Bradley Boehmke and Jay Cunningham and GBM Developers},
+    year = {2019},
+    note = {R package version 2.1.5},
+    url = {https://CRAN.R-project.org/package=gbm},
+}
+
+@article{Wood_2011,
+	author = {Wood, Simon N.},
+	title = {Fast stable restricted maximum likelihood and marginal likelihood estimation of semiparametric generalized linear models},
+	journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+	volume = {73},
+	number = {1},
+	pages = {3-36},
+	keywords = {Adaptive smoothing, Generalized additive mixed model, Generalized additive model, Generalized cross-validation, Marginal likelihood, Model selection, Penalized generalized linear model, Penalized regression splines, Restricted maximum likelihood, Scalar on function regression, Stable computation},
+	doi = {10.1111/j.1467-9868.2010.00749.x},
+	url = {https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2010.00749.x},
+	eprint = {https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9868.2010.00749.x},
+	abstract = {Summary.  Recent work by Reiss and Ogden provides a theoretical basis for sometimes preferring restricted maximum likelihood (REML) to generalized cross-validation (GCV) for smoothing parameter selection in semiparametric regression. However, existing REML or marginal likelihood (ML) based methods for semiparametric generalized linear models (GLMs) use iterative REML or ML estimation of the smoothing parameters of working linear approximations to the GLM. Such indirect schemes need not converge and fail to do so in a non-negligible proportion of practical analyses. By contrast, very reliable prediction error criteria smoothing parameter selection methods are available, based on direct optimization of GCV, or related criteria, for the GLM itself. Since such methods directly optimize properly defined functions of the smoothing parameters, they have much more reliable convergence properties. The paper develops the first such method for REML or ML estimation of smoothing parameters. A Laplace approximation is used to obtain an approximate REML or ML for any GLM, which is suitable for efficient direct optimization. This REML or ML criterion requires that Newton–Raphson iteration, rather than Fisher scoring, be used for GLM fitting, and a computationally stable approach to this is proposed. The REML or ML criterion itself is optimized by a Newton method, with the derivatives required obtained by a mixture of implicit differentiation and direct methods. The method will cope with numerical rank deficiency in the fitted model and in fact provides a slight improvement in numerical robustness on the earlier method of Wood for prediction error criteria based smoothness selection. Simulation results suggest that the new REML and ML methods offer some improvement in mean-square error performance relative to GCV or Akaike's information criterion in most cases, without the small number of severe undersmoothing failures to which Akaike's information criterion and GCV are prone. This is achieved at the same computational cost as GCV or Akaike's information criterion. The new approach also eliminates the convergence failures of previous REML- or ML-based approaches for penalized GLMs and usually has lower computational cost than these alternatives. Example applications are presented in adaptive smoothing, scalar on function regression and generalized additive model selection.},
+	year = {2011}
+}
+
+@Article{Crookston_2007,
+	title = {yaImpute: An R Package for kNN Imputation},
+    author = {Nicholas L. Crookston and Andrew O. Finley},
+    journal = {Journal of Statistical Software},
+    volume = {23},
+    number = {10},
+    day = {10},
+    month = {10},
+    year = {2007},
+    coden = {JSSOBK},
+    issn = {1548-7660},
+    bibdate = {2007-10-10},
+    url = {http://www.jstatsoft.org/v23/i10},
+    accepted = {2007-10-10},
+    submitted = {2007-06-20},
+}
+
+@article{Phillips_2006,
+	doi = {10.1016/j.ecolmodel.2005.03.026},
+	url = {https://doi.org/10.1016%2Fj.ecolmodel.2005.03.026},
+	year = 2006,
+	month = {jan},
+	publisher = {Elsevier {BV}},
+	volume = {190},
+	number = {3-4},
+	pages = {231--259},
+	author = {Steven J. Phillips and Robert P. Anderson and Robert E. Schapire},
+	title = {Maximum entropy modeling of species geographic distributions},
+	journal = {Ecological Modelling}
+}
+
+@Manual{Milborrow_2017,
+    title = {earth: Multivariate Adaptive Regression Splines},
+    author = {Stephen Milborrow and Trevor Hastie and Rob Tibshirani and Alan Miller and Thomas Lumley},
+    year = {2019},
+    note = {R package version 5.1.2},
+    url = {https://CRAN.R-project.org/package=earth},
+}
+
+@Article{Liaw_2002,
+    title = {Classification and Regression by randomForest},
+    author = {Andy Liaw and Matthew Wiener},
+    journal = {R News},
+    year = {2002},
+    volume = {2},
+    number = {3},
+    pages = {18-22},
+    url = {https://CRAN.R-project.org/doc/Rnews/},
+}
+
+@Manual{Meyer_2019,
+    title = {e1071: Misc Functions of the Department of Statistics, Probability Theory Group (Formerly: E1071), TU Wien},
+    author = {David Meyer and Evgenia Dimitriadou and Kurt Hornik and Andreas Weingessel and Friedrich Leisch},
+    year = {2019},
+    note = {R package version 1.7-3},
+    url = {https://CRAN.R-project.org/package=e1071},
+}
+
+@Manual{Chen_2019,
+    title = {xgboost: Extreme Gradient Boosting},
+    author = {Tianqi Chen and Tong He and Michael Benesty and Vadim Khotilovich and Yuan Tang and Hyunsu Cho and Kailong Chen and Rory Mitchell and Ignacio Cano and Tianyi Zhou and Mu Li and Junyuan Xie and Min Lin and Yifeng Geng and Yutian Li},
+    year = {2019},
+    note = {R package version 0.90.0.2},
+    url = {https://CRAN.R-project.org/package=xgboost},
+}
+
+@article{Clark_2017,
+	doi = {10.1002/ecm.1241},
+	url = {https://doi.org/10.1002%2Fecm.1241},
+	year = 2017,
+	month = {jan},
+	publisher = {Wiley},
+	volume = {87},
+	number = {1},
+	pages = {34--56},
+	author = {James S. Clark and Diana Nemergut and Bijan Seyednasrollah and Phillip J. Turner and Stacy Zhang},
+	title = {Generalized joint attribute modeling for biodiversity analysis: median-zero, multivariate, multifarious data},
+	journal = {Ecological Monographs}
+}
+
+@article{Ferrier_2006,
+	doi = {10.1111/j.1365-2664.2006.01149.x},
+	url = {https://doi.org/10.1111%2Fj.1365-2664.2006.01149.x},
+	year = 2006,
+	month = {jun},
+	publisher = {Wiley},
+	volume = {43},
+	number = {3},
+	pages = {393--404},
+	author = {Simon Ferrier and Antoine Guisan},
+	title = {Spatial modelling of biodiversity at the community level},
+	journal = {Journal of Applied Ecology}
+}
+
+@article{Zurell_2019,
+	doi = {10.1111/jbi.13608},
+	url = {https://doi.org/10.1111%2Fjbi.13608},
+	year = 2019,
+	month = {jun},
+	publisher = {Wiley},
+	volume = {47},
+	number = {1},
+	pages = {101--113},
+	author = {Damaris Zurell and Niklaus E. Zimmermann and Helge Gross and Andri Baltensweiler and Thomas Sattler and Rafael O. Wüest},
+	title = {Testing species assemblage predictions from stacked and joint species distribution models},
+	journal = {Journal of Biogeography}
+}
+
+@article{Aitchison_1989,
+ ISSN = {00063444},
+ URL = {http://www.jstor.org/stable/2336624},
+ abstract = {The statistical analysis of multivariate counts has proved difficult because of the lack of a parametric class of distributions supporting a rich enough correlation structure. With increasing availability of powerful computing facilities an obvious candidate for consideration is now the multivariate log normal mixture of independent Poisson distributions, the multivariate Poisson-log normal distribution. The properties of this discrete multivariate distribution are studied and its uses in a variety of applications to multivariate count data are illustrated.},
+ author = {J. Aitchison and C. H. Ho},
+ journal = {Biometrika},
+ number = {4},
+ pages = {643--653},
+ publisher = {[Oxford University Press, Biometrika Trust]},
+ title = {The Multivariate Poisson-Log Normal Distribution},
+ volume = {76},
+ year = {1989}
+}
+
+@article{Gelman_1992,
+	doi = {10.1214/ss/1177011136},
+	url = {https://doi.org/10.1214%2Fss%2F1177011136},
+	year = 1992,
+	month = {nov},
+	publisher = {Institute of Mathematical Statistics},
+	volume = {7},
+	number = {4},
+	pages = {457--472},
+	author = {Andrew Gelman and Donald B. Rubin},
+	title = {Inference from Iterative Simulation Using Multiple Sequences},
+	journal = {Statistical Science}
+}
+
+@article{Dehling_2018,
+	doi = {10.1111/oik.05415},
+	url = {https://doi.org/10.1111%2Foik.05415},
+	year = 2018,
+	month = {sep},
+	publisher = {Wiley},
+	volume = {127},
+	number = {12},
+	pages = {1711--1723},
+	author = {D. Matthias Dehling and Daniel B. Stouffer},
+	title = {Bringing the Eltonian niche into functional diversity},
+	journal = {Oikos}
+}
+
+@article{Hortal_2015,
+	doi = {10.1146/annurev-ecolsys-112414-054400},
+	url = {https://doi.org/10.1146%2Fannurev-ecolsys-112414-054400},
+	year = 2015,
+	month = {dec},
+	publisher = {Annual Reviews},
+	volume = {46},
+	number = {1},
+	pages = {523--549},
+	author = {Joaqu{\'{\i}}n Hortal and Francesco de Bello and Jos{\'{e}} Alexandre F. Diniz-Filho and Thomas M. Lewinsohn and Jorge M. Lobo and Richard J. Ladle},
+	title = {Seven Shortfalls that Beset Large-Scale Knowledge of Biodiversity},
+	journal = {Annual Review of Ecology, Evolution, and Systematics}
+}
+
+@book{Leibold_2018,
+	doi = {10.1515/9781400889068},
+	url = {https://doi.org/10.1515%2F9781400889068},
+	year = 2018,
+	month = {dec},
+	publisher = {Princeton University Press},
+	author = {Mathew A. Leibold and Jonathan M. Chase},
+	title = {Metacommunity Ecology, Volume 59}
+}
+
+@article{Bhattacharya_2011,
+	doi = {10.1093/biomet/asr013},
+	url = {https://doi.org/10.1093%2Fbiomet%2Fasr013},
+	year = 2011,
+	month = {may},
+	publisher = {Oxford University Press ({OUP})},
+	volume = {98},
+	number = {2},
+	pages = {291--306},
+	author = {A. Bhattacharya and D. B. Dunson},
+	title = {Sparse Bayesian infinite factor models},
+	journal = {Biometrika}
+}
+
+@article{Legendre_2005,
+	doi = {10.1198/108571105x46642},
+	url = {https://doi.org/10.1198%2F108571105x46642},
+	year = 2005,
+	month = {jun},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {10},
+	number = {2},
+	pages = {226--245},
+	author = {Pierre Legendre},
+	title = {Species associations: the Kendall coefficient of concordance revisited},
+	journal = {Journal of Agricultural, Biological, and Environmental Statistics}
+}
+
+@article{Elith_2008,
+	doi = {10.1111/j.1365-2656.2008.01390.x},
+	url = {https://doi.org/10.1111%2Fj.1365-2656.2008.01390.x},
+	year = 2008,
+	month = {jul},
+	publisher = {Wiley},
+	volume = {77},
+	number = {4},
+	pages = {802--813},
+	author = {J. Elith and J. R. Leathwick and T. Hastie},
+	title = {A working guide to boosted regression trees},
+	journal = {Journal of Animal Ecology}
+}
+
+@article{Burgess_2015,
+	doi = {10.1111/brv.12198},
+	url = {https://doi.org/10.1111%2Fbrv.12198},
+	year = 2015,
+	month = {jun},
+	publisher = {Wiley},
+	volume = {91},
+	number = {3},
+	pages = {867--882},
+	author = {Scott C. Burgess and Marissa L. Baskett and Richard K. Grosberg and Steven G. Morgan and Richard R. Strathmann},
+	title = {When is dispersal for dispersal? Unifying marine and terrestrial perspectives},
+	journal = {Biological Reviews}
+}
+
+@article{Troudet_2017,
+	doi = {10.1038/s41598-017-09084-6},
+	url = {https://doi.org/10.1038%2Fs41598-017-09084-6},
+	year = 2017,
+	month = {aug},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {7},
+	number = {1},
+	author = {Julien Troudet and Philippe Grandcolas and Amandine Blin and R{\'{e}}gine Vignes-Lebbe and Fr{\'{e}}d{\'{e}}ric Legendre},
+	title = {Taxonomic bias in biodiversity data and societal preferences},
+	journal = {Scientific Reports}
+}
+
+@article{Blanchet_2020,
+	doi = {10.1111/ele.13525},
+	url = {https://doi.org/10.1111%2Fele.13525},
+	year = 2020,
+	month = {may},
+	publisher = {Wiley},
+	author = {F. Guillaume Blanchet and Kevin Cazelles and Dominique Gravel},
+	editor = {Elizabeth Jeffers},
+	title = {Co-occurrence is not evidence of ecological interactions},
+	journal = {Ecology Letters}
+}
+
+@article{Dunne_2004,
+	doi = {10.3354/meps273291},
+	url = {https://doi.org/10.3354%2Fmeps273291},
+	year = 2004,
+	publisher = {Inter-Research Science Center},
+	volume = {273},
+	pages = {291--302},
+	author = {JA Dunne and RJ Williams and ND Martinez},
+	title = {Network structure and robustness of marine food webs},
+	journal = {Marine Ecology Progress Series}
+}
+
+@article{Martinez_1992,
+	doi = {10.1086/285382},
+	url = {https://doi.org/10.1086%2F285382},
+	year = 1992,
+	month = {jun},
+	publisher = {University of Chicago Press},
+	volume = {139},
+	number = {6},
+	pages = {1208--1218},
+	author = {Neo D. Martinez},
+	title = {Constant Connectance in Community Food Webs},
+	journal = {The American Naturalist}
+}
+
+@article{Nordstrom_2015,
+	doi = {10.1890/es14-00515.1},
+	url = {https://doi.org/10.1890%2Fes14-00515.1},
+	year = 2015,
+	month = {sep},
+	publisher = {Wiley},
+	volume = {6},
+	number = {9},
+	pages = {art161},
+	author = {M. C. Nordström and K. Aarnio and A. Törnroos and E. Bonsdorff},
+	title = {Nestedness of trophic links and biological traits in a marine food web},
+	journal = {Ecosphere}
+}
+
+@article{Barbaro_2019,
+	doi = {10.1098/rspb.2018.2193},
+	url = {https://doi.org/10.1098%2Frspb.2018.2193},
+	year = 2019,
+	month = {jan},
+	publisher = {The Royal Society},
+	volume = {286},
+	number = {1894},
+	pages = {20182193},
+	author = {Luc Barbaro and Eric Allan and Evy Ampoorter and Bastien Castagneyrol and Yohan Charbonnier and Hans De Wandeler and Christian Kerbiriou and Harriet T. Milligan and Aude Vialatte and Monique Carnol and Marc Deconchat and Pallieter De Smedt and Herv{\'{e}} Jactel and Julia Koricheva and Isabelle Le Viol and Bart Muys and Michael Scherer-Lorenzen and Kris Verheyen and Fons van der Plas},
+	title = {Biotic predictors complement models of bat and bird responses to climate and tree diversity in European forests},
+	journal = {Proceedings of the Royal Society B: Biological Sciences}
+}
+
+@article{Leach_2016,
+	doi = {10.1016/j.ecolmodel.2016.06.008},
+	url = {https://doi.org/10.1016%2Fj.ecolmodel.2016.06.008},
+	year = 2016,
+	month = {oct},
+	publisher = {Elsevier {BV}},
+	volume = {337},
+	pages = {96--106},
+	author = {Katie Leach and W. Ian Montgomery and Neil Reid},
+	title = {Modelling the influence of biotic factors on species distribution patterns},
+	journal = {Ecological Modelling}
+}
+
+@incollection{Box_1979,
+	doi = {10.1016/b978-0-12-438150-6.50018-2},
+	url = {https://doi.org/10.1016%2Fb978-0-12-438150-6.50018-2},
+	year = 1979,
+	publisher = {Elsevier},
+	pages = {201--236},
+	author = {G.E.P. Box},
+	title = {Robustness in the Strategy of Scientific Model Building},
+	booktitle = {Robustness in Statistics}
+}
+
+@article{De_Caceres_2019,
+	doi = {10.1002/ecm.1350},
+	url = {https://doi.org/10.1002%2Fecm.1350},
+	year = 2019,
+	month = {jan},
+	publisher = {Wiley},
+	volume = {89},
+	number = {2},
+	pages = {e01350},
+%	author = {Miquel {De C{\'{a}}ceres} and Llu{\'{\i}}s Coll and Pierre Legendre and Robert B. Allen and Susan K. Wiser and Marie-Jos{\'{e}}e Fortin and Richard Condit and Stephen Hubbell},
+	author = {Miquel {De Caceres} and Llu{\'{\i}}s Coll and Pierre Legendre and Robert B. Allen and Susan K. Wiser and Marie-Jos{\'{e}}e Fortin and Richard Condit and Stephen Hubbell},
+	title = {Trajectory analysis in community ecology},
+	journal = {Ecological Monographs}
+}
+
+@article{Djurhuus_2020,
+	doi = {10.1038/s41467-019-14105-1},
+	url = {https://doi.org/10.1038%2Fs41467-019-14105-1},
+	year = 2020,
+	month = {jan},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {11},
+	number = {1},
+	author = {Anni Djurhuus and Collin J. Closek and Ryan P. Kelly and Kathleen J. Pitz and Reiko P. Michisaki and Hilary A. Starks and Kristine R. Walz and Elizabeth A. Andruszkiewicz and Emily Olesin and Katherine Hubbard and Enrique Montes and Daniel Otis and Frank E. Muller-Karger and Francisco P. Chavez and Alexandria B. Boehm and Mya Breitbart},
+	title = {Environmental {DNA} reveals seasonal shifts and potential interactions in a marine community},
+	journal = {Nature Communications}
+}
+
+@Book{Pascual_2006,
+ author = {Pascual, Mercedes and Jennifer, Dunne},
+ title = {Ecological networks: linking structure to dynamics in food webs},
+ publisher = {Oxford University Press},
+ year = {2006},
+ address = {Oxford New York},
+ isbn = {9780195188165}
+ }
+
+@book{Worm_2018,
+	doi = {10.23943/princeton/9780691154831.001.0001},
+	url = {https://doi.org/10.23943%2Fprinceton%2F9780691154831.001.0001},
+	year = 2018,
+	month = {jun},
+	publisher = {Princeton University Press},
+	author = {Boris Worm and Derek P. Tittensor},
+	title = {A Theory of Global Biodiversity ({MPB}-60)}
+}
+
+@article{Magurran_2019,
+	doi = {10.1111/geb.13026},
+	url = {https://doi.org/10.1111%2Fgeb.13026},
+	year = 2019,
+	month = {dec},
+	publisher = {Wiley},
+	volume = {28},
+	number = {12},
+	pages = {1949--1960},
+	author = {Anne E. Magurran and Maria Dornelas and Faye Moyes and Peter A. Henderson},
+	editor = {David Storch},
+	title = {Temporal $\upbeta$ diversity{\textemdash}A macroecological perspective},
+	journal = {Global Ecology and Biogeography}
+}
+
+@article{Blowes_2019,
+	doi = {10.1126/science.aaw1620},
+	url = {https://doi.org/10.1126%2Fscience.aaw1620},
+	year = 2019,
+	month = {oct},
+	publisher = {American Association for the Advancement of Science ({AAAS})},
+	volume = {366},
+	number = {6463},
+	pages = {339--345},
+	author = {Shane A. Blowes and Sarah R. Supp and Laura H. Ant{\~{a}}o and Amanda Bates and Helge Bruelheide and Jonathan M. Chase and Faye Moyes and Anne Magurran and Brian McGill and Isla H. Myers-Smith and Marten Winter and Anne D. Bjorkman and Diana E. Bowler and Jarrett E. K. Byrnes and Andrew Gonzalez and Jes Hines and Forest Isbell and Holly P. Jones and Laetitia M. Navarro and Patrick L. Thompson and Mark Vellend and Conor Waldock and Maria Dornelas},
+	title = {The geography of biodiversity change in marine and terrestrial assemblages},
+	journal = {Science}
+}
+
+@article{Sunday_2012,
+	doi = {10.1038/nclimate1539},
+	url = {https://doi.org/10.1038%2Fnclimate1539},
+	year = 2012,
+	month = {may},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {2},
+	number = {9},
+	pages = {686--690},
+	author = {Jennifer M. Sunday and Amanda E. Bates and Nicholas K. Dulvy},
+	title = {Thermal tolerance and the global redistribution of~animals},
+	journal = {Nature Climate Change}
+}
+
+ @article{Blonder_2017,
+	doi = {10.1111/ecog.03187},
+	url = {https://doi.org/10.1111%2Fecog.03187},
+	year = 2017,
+	month = {sep},
+	publisher = {Wiley},
+	volume = {41},
+	number = {9},
+	pages = {1441--1455},
+	author = {Benjamin Blonder},
+	title = {Hypervolume concepts in niche- and trait-based ecology},
+	journal = {Ecography}
+}
+
+@article{Wright_2006,
+author = {Wright, Jessica W. and Davies, Kendi F. and Lau, Jennifer A. and McCall, Andrew C. and McKay, John K.},
+title = {EXPERIMENTAL VERIFICATION OF ECOLOGICAL NICHE MODELING IN A HETEROGENEOUS ENVIRONMENT},
+journal = {Ecology},
+volume = {87},
+number = {10},
+pages = {2433-2439},
+keywords = {ecological niche modeling, edaphic variation, GAM models, local adaptation, niche differentiation, serpentine soils, transplant experiments},
+doi = {10.1890/0012-9658(2006)87[2433:EVOENM]2.0.CO;2},
+url = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/0012-9658%282006%2987%5B2433%3AEVOENM%5D2.0.CO%3B2},
+eprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1890/0012-9658%282006%2987%5B2433%3AEVOENM%5D2.0.CO%3B2},
+abstract = {The current range of ecological habitats occupied by a species reflects a combination of the ecological tolerance of the species, dispersal limitation, and competition. Whether the current distribution of a species accurately reflects its niche has important consequences for the role of ecological niche modeling in predicting changes in species ranges as the result of biological invasions and climate change. We employed a detailed data set of species occurrence and spatial variation in biotic and abiotic attributes to model the niche of a native California annual plant, Collinsia sparsiflora. We tested the robustness of our model for both the realized and fundamental niche by planting seeds collected from four populations, representing two ecotypes, into plots that fully represented the five-dimensional niche space described by our model. The model successfully predicted which habitats allowed for C. sparsiflora persistence, but only for one of the two source ecotypes. Our results show that substantial niche divergence has occurred in our sample of four study populations, illustrating the importance of adequately sampling and describing within-species variation in niche modeling.},
+year = {2006}
+}
+
+@article{Estes_2018,
+	doi = {10.1038/s41559-018-0524-4},
+	url = {https://doi.org/10.1038%2Fs41559-018-0524-4},
+	year = 2018,
+	month = {apr},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {2},
+	number = {5},
+	pages = {819--826},
+	author = {Lyndon Estes and Paul R. Elsen and Timothy Treuer and Labeeb Ahmed and Kelly Caylor and Jason Chang and Jonathan J. Choi and Erle C. Ellis},
+	title = {The spatial and temporal domains of modern ecology},
+	journal = {Nature Ecology {\&} Evolution}
+}
+
+@article{Edgar_2016,
+	doi = {10.1146/annurev-marine-122414-033921},
+	url = {https://doi.org/10.1146%2Fannurev-marine-122414-033921},
+	year = 2016,
+	month = {jan},
+	publisher = {Annual Reviews},
+	volume = {8},
+	number = {1},
+	pages = {435--461},
+	author = {Graham J. Edgar and Amanda E. Bates and Tomas J. Bird and Alun H. Jones and Stuart Kininmonth and Rick D. Stuart-Smith and Thomas J. Webb},
+	title = {New Approaches to Marine Conservation Through the Scaling Up of Ecological Data},
+	journal = {Annual Review of Marine Science}
+}
+
+@article{Melo_Merino_2020,
+	doi = {10.1016/j.ecolmodel.2019.108837},
+	url = {https://doi.org/10.1016%2Fj.ecolmodel.2019.108837},
+	year = 2020,
+	month = {jan},
+	publisher = {Elsevier {BV}},
+	volume = {415},
+	pages = {108837},
+	author = {Sara M. Melo-Merino and H{\'{e}}ctor Reyes-Bonilla and Andr{\'{e}}s Lira-Noriega},
+	title = {Ecological niche models and species distribution models in marine environments: A literature review and spatial analysis of evidence},
+	journal = {Ecological Modelling}
+}
+
+@book{Guisan_2017,
+	doi = {10.1017/9781139028271},
+	url = {https://doi.org/10.1017%2F9781139028271},
+	year = 2017,
+	publisher = {Cambridge University Press},
+	author = {Antoine Guisan and Wilfried Thuiller and Niklaus E. Zimmermann},
+	title = {Habitat Suitability and Distribution Models}
+}
+
+@article {Busby_1991,
+	Title = {BIOCLIM: a bioclimate analysis and prediction system},
+	Author = {Busby, Jr},
+	Number = {1},
+	Volume = {6},
+	Year = {1991},
+	Journal = {Plant protection quarterly},
+	ISSN = {0815-2195},
+	Pages = {8—9}
+}
+
+@incollection{Hastie_1992,
+  title={Generalized linear models},
+  editor={Chambers, John M and Hastie, Trevor J},
+  author={Hastie, Trevor J and Pregibon, Daryl},
+  booktitle={Statistical models in S},
+  pages={195--247},
+  year={1992},
+  publisher={Chapman & Hall/CRC}
+}
+
+@inbook{Hawkins_2019,
+	place={Cambridge},
+	series={Systematics Association Special Volume Series},
+	title={The Intertidal Zone of the North-East Atlantic Region: Pattern and Process},
+	DOI={10.1017/9781108235792.003},
+	booktitle={Interactions in the Marine Benthos: Global Patterns and Processes},
+	publisher={Cambridge University Press},
+	author={Hawkins, Stephen J. and Pack, Kathryn E. and Firth, Louise B. and Mieszkowska, Nova and Evans, Ally J. and Martins, Gustavo M. and Åberg, Per and Adams, Leoni C. and Arenas, Francisco and Boaventura, Diana M. and et al.}, 
+	editor={Hawkins, Stephen J. and Bohn, Katrin and Firth, Louise B. and Williams, Gray A.Editors},
+	year={2019}, 
+	pages={7–46}, 
+	collection={Systematics Association Special Volume Series}
+}
+
+@inbook{Woodin_2019, 
+	place={Cambridge},
+	series={Systematics Association Special Volume Series},
+	title={Shallow Water Muddy Sands of the North-West Atlantic Ocean: Latitudinal Patterns in Interactions and Processes},
+	DOI={10.1017/9781108235792.007},
+	booktitle={Interactions in the Marine Benthos: Global Patterns and Processes}, 
+	publisher={Cambridge University Press}, 
+	author={Woodin, Sarah A. and Bell, Susan S. and Grant, Jon and Snelgrove, Paul V. R. and Wethey, David S.}, 
+	editor={Hawkins, Stephen J. and Bohn, Katrin and Firth, Louise B. and Williams, Gray A.Editors}, 
+	year={2019}, 
+	pages={128–163}, 
+	collection={Systematics Association Special Volume Series}
+}
+
+@article{Majdi_2018,
+	Abstract = {Trophic ecology is the study of feeding interactions and food acquisition by organisms. It includes the causes and consequences of those behaviours at all levels of biological organisation. As a field of research, it crosses many disciplinary boundaries and provides knowledge that is pertinent to many other areas of ecology. Here we list and categorise the methods available to trophic ecologists whose toolbox has broadened considerably in recent years. They encompass empirical and numerical approaches with focus ranging from molecules to ecosystems. We further examine the relationship of each method to features such as the scale of observation (from microbes to largest organisms) and organisational level (from individuals to ecosystems) as well as the ecological question the method is capable of answering (from detecting predator-prey relationships to studying implications and consequences at different scales). Our survey reveals a very wide range of methodologies, each more-or-less appropriate for a particular line of research. It also identifies deficits, for example, trophic interactions at microscopic scales, for which empirical methods have hardly been used, as well as trophic models that have failed to consider fluxes at the ecosystem scale. Furthermore, we note that the combination of methodologies remains under-exploited despite great opportunities to solve complex ecological questions and to foster the emergence of new insights and hypotheses regarding organism, population and/or ecosystem properties.},
+	Author = {Nabil Majdi and Nicolas Hette-Tronquart and Etienne Auclair and Alexandre Bec and Tiphaine Chouvelon and Bruno Cognie and Michael Danger and Priscilla Decottignies and Aur{\'e}lie Dessier and Christian Desvilettes and Stanislas Dubois and Christine Dupuy and Cl{\'e}mentine Fritsch and C{\'e}dric Gaucherel and Micka{\"e}l Hedde and Franck Jabot and Sebastien Lefebvre and Martin P. Marzloff and Benjamin Pey and Nathalie Peyrard and Thibaut Powolny and R{\'e}gis Sabbadin and Elisa Th{\'e}bault and Marie-Elodie Perga},
+	Doi = {https://doi.org/10.1016/j.fooweb.2018.e00100},
+	Issn = {2352-2496},
+	Journal = {Food Webs},
+	Keywords = {Food web, Feeding interactions, Flux of energy, Computer simulations, Trophic models},
+	Pages = {e00100},
+	Title = {There's no harm in having too much: A comprehensive toolbox of methods in trophic ecology},
+	Url = {http://www.sciencedirect.com/science/article/pii/S2352249618300223},
+	Volume = {17},
+	Year = {2018},
+	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S2352249618300223},
+	Bdsk-Url-2 = {https://doi.org/10.1016/j.fooweb.2018.e00100}
+}
+
+@article{Boyd_2000,
+	doi = {10.1038/35037500},
+	url = {https://doi.org/10.1038%2F35037500},
+	year = 2000,
+	month = {oct},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {407},
+	number = {6805},
+	pages = {695--702},
+	author = {Philip W. Boyd and Andrew J. Watson and Cliff S. Law and Edward R. Abraham and Thomas Trull and Rob Murdoch and Dorothee C. E. Bakker and Andrew R. Bowie and K. O. Buesseler and Hoe Chang and Matthew Charette and Peter Croot and Ken Downing and Russell Frew and Mark Gall and Mark Hadfield and Julie Hall and Mike Harvey and Greg Jameson and Julie LaRoche and Malcolm Liddicoat and Roger Ling and Maria T. Maldonado and R. Michael McKay and Scott Nodder and Stu Pickmere and Rick Pridmore and Steve Rintoul and Karl Safi and Philip Sutton and Robert Strzepek and Kim Tanneberger and Suzanne Turner and Anya Waite and John Zeldis},
+	title = {A mesoscale phytoplankton bloom in the polar Southern Ocean stimulated by iron fertilization},
+	journal = {Nature}
+}
+
+@article{Bates_2020,
+	doi = {10.1139/cjz-2018-0276},
+	url = {https://doi.org/10.1139%2Fcjz-2018-0276},
+	year = 2020,
+	month = {apr},
+	publisher = {Canadian Science Publishing},
+	volume = {98},
+	number = {4},
+	pages = {237--244},
+	author = {A.E. Bates and S.A. Morley},
+	title = {Interpreting empirical estimates of experimentally derived physiological and biological thermal limits in ectotherms},
+	journal = {Canadian Journal of Zoology}
+}
+
+@article{Witman_2015,
+	doi = {10.1890/14-2265.1},
+	url = {https://doi.org/10.1890%2F14-2265.1},
+	year = 2015,
+	month = {nov},
+	publisher = {Wiley},
+	volume = {85},
+	number = {4},
+	pages = {475--504},
+	author = {Jon D. Witman and Robert W. Lamb and Jarrett E. K. Byrnes},
+	title = {Towards an integration of scale and complexity in marine ecology},
+	journal = {Ecological Monographs}
+}
+
+@article{Isbell_2017,
+	doi = {10.1038/nature22899},
+	url = {https://doi.org/10.1038%2Fnature22899},
+	year = 2017,
+	month = {jun},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {546},
+	number = {7656},
+	pages = {65--72},
+	author = {Forest Isbell and Andrew Gonzalez and Michel Loreau and Jane Cowles and Sandra D{\'{\i}}az and Andy Hector and Georgina M. Mace and David A. Wardle and Mary I. O{\textquotesingle}Connor and J. Emmett Duffy and Lindsay A. Turnbull and Patrick L. Thompson and Anne Larigauderie},
+	title = {Linking the influence and dependence of people on biodiversity across scales},
+	journal = {Nature}
+}
+
+@article{Paine_1966,
+	doi = {10.1086/282400},
+	url = {https://doi.org/10.1086%2F282400},
+	year = 1966,
+	month = {jan},
+	publisher = {University of Chicago Press},
+	volume = {100},
+	number = {910},
+	pages = {65--75},
+	author = {Robert T. Paine},
+	title = {Food Web Complexity and Species Diversity},
+	journal = {The American Naturalist}
+}
+
+@article{Hardin_1960,
+	doi = {10.1126/science.131.3409.1292},
+	url = {https://doi.org/10.1126%2Fscience.131.3409.1292},
+	year = 1960,
+	month = {apr},
+	publisher = {American Association for the Advancement of Science ({AAAS})},
+	volume = {131},
+	number = {3409},
+	pages = {1292--1297},
+	author = {G. Hardin},
+	title = {The Competitive Exclusion Principle},
+	journal = {Science}
+}
+
+@article{Tittensor_2010,
+	doi = {10.1038/nature09329},
+	url = {https://doi.org/10.1038%2Fnature09329},
+	year = 2010,
+	month = {jul},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {466},
+	number = {7310},
+	pages = {1098--1101},
+	author = {Derek P. Tittensor and Camilo Mora and Walter Jetz and Heike K. Lotze and Daniel Ricard and Edward Vanden Berghe and Boris Worm},
+	title = {Global patterns and predictors of marine biodiversity across taxa},
+	journal = {Nature}
+}
+
+@article{Soininen_2014,
+	doi = {10.1890/13-2228.1},
+	url = {https://doi.org/10.1890%2F13-2228.1},
+	year = 2014,
+	month = {dec},
+	publisher = {Wiley},
+	volume = {95},
+	number = {12},
+	pages = {3284--3292},
+	author = {Janne Soininen},
+	title = {A quantitative analysis of species sorting across organisms and ecosystems},
+	journal = {Ecology}
+}
+
+@article{Wisz_2012,
+	doi = {10.1111/j.1469-185x.2012.00235.x},
+	url = {https://doi.org/10.1111%2Fj.1469-185x.2012.00235.x},
+	year = 2012,
+	month = {jun},
+	publisher = {Wiley},
+	volume = {88},
+	number = {1},
+	pages = {15--30},
+	author = {Mary Susanne Wisz and Julien Pottier and W. Daniel Kissling and Loïc Pellissier and Jonathan Lenoir and Christian F. Damgaard and Carsten F. Dormann and Mads C. Forchhammer and John-Arvid Grytnes and Antoine Guisan and Risto K. Heikkinen and Toke T. H{\o}ye and Ingolf Kühn and Miska Luoto and Luigi Maiorano and Marie-Charlotte Nilsson and Signe Normand and Erik Öckinger and Niels M. Schmidt and Mette Termansen and Allan Timmermann and David A. Wardle and Peter Aastrup and Jens-Christian Svenning},
+	title = {The role of biotic interactions in shaping distributions and realised assemblages of species: implications for species distribution modelling},
+	journal = {Biological Reviews}
+}
+
+@article{Bastolla_2009,
+	doi = {10.1038/nature07950},
+	url = {https://doi.org/10.1038%2Fnature07950},
+	year = 2009,
+	month = {apr},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {458},
+	number = {7241},
+	pages = {1018--1020},
+	author = {Ugo Bastolla and Miguel A. Fortuna and Alberto Pascual-Garc{\'{\i}}a and Antonio Ferrera and Bartolo Luque and Jordi Bascompte},
+	title = {The architecture of mutualistic networks minimizes competition and increases biodiversity},
+	journal = {Nature}
+}
+
+@phdthesis{Boye_2019b,
+    author = {Aurélien Boyé},
+    title = {Diversité taxinomique et fonctionnelle des habitats benthiques dans l’espace et dans le temps: une perspective régionale et décennale},
+    publisher = {Université de Bretagne Occidentale, Université de Montréal},
+    year = {2019}
+}
+
+@article{Potts_2006,
+	doi = {10.1016/j.ecolmodel.2006.05.025},
+	url = {https://doi.org/10.1016%2Fj.ecolmodel.2006.05.025},
+	year = 2006,
+	month = {nov},
+	publisher = {Elsevier {BV}},
+	volume = {199},
+	number = {2},
+	pages = {153--163},
+	author = {Joanne M. Potts and Jane Elith},
+	title = {Comparing species abundance models},
+	journal = {Ecological Modelling}
+}
+
+@article{Trinh_2013,
+	doi = {10.1007/s11002-013-9254-1},
+	url = {https://doi.org/10.1007%2Fs11002-013-9254-1},
+	year = 2013,
+	month = {aug},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {25},
+	number = {2},
+	pages = {219--234},
+	author = {Giang Trinh and Cam Rungie and Malcolm Wright and Carl Driesener and John Dawes},
+	title = {Predicting future purchases with the Poisson log-normal model},
+	journal = {Marketing Letters}
+}
+
+@article{Harrison_2014,
+	doi = {10.7717/peerj.616},
+	url = {https://doi.org/10.7717%2Fpeerj.616},
+	year = 2014,
+	month = {oct},
+	publisher = {{PeerJ}},
+	volume = {2},
+	pages = {e616},
+	author = {Xavier A. Harrison},
+	title = {Using observation-level random effects to model overdispersion in count data in ecology and evolution},
+	journal = {{PeerJ}}
+}
+
+@article{Youden_1950,
+author = {Youden, W. J.},
+title = {Index for rating diagnostic tests},
+journal = {Cancer},
+volume = {3},
+number = {1},
+pages = {32-35},
+doi = {10.1002/1097-0142(1950)3:1<32::AID-CNCR2820030106>3.0.CO;2-3},
+url = {https://acsjournals.onlinelibrary.wiley.com/doi/abs/10.1002/1097-0142%281950%293%3A1%3C32%3A%3AAID-CNCR2820030106%3E3.0.CO%3B2-3},
+eprint = {https://acsjournals.onlinelibrary.wiley.com/doi/pdf/10.1002/1097-0142%281950%293%3A1%3C32%3A%3AAID-CNCR2820030106%3E3.0.CO%3B2-3},
+year = {1950}
+}
+
+@article{Lawson_2013,
+	doi = {10.1111/2041-210x.12123},
+	url = {https://doi.org/10.1111%2F2041-210x.12123},
+	year = 2013,
+	month = {dec},
+	publisher = {Wiley},
+	volume = {5},
+	number = {1},
+	pages = {54--64},
+	author = {Callum R. Lawson and Jenny A. Hodgson and Robert J. Wilson and Shane A. Richards},
+	editor = {Robert Freckleton},
+	title = {Prevalence, thresholds and the performance of presence-absence models},
+	journal = {Methods in Ecology and Evolution}
+}
+
+@article{Staniczenko_2017,
+	doi = {10.1111/ele.12770},
+	url = {https://doi.org/10.1111%2Fele.12770},
+	year = 2017,
+	month = {apr},
+	publisher = {Wiley},
+	volume = {20},
+	number = {6},
+	pages = {693--707},
+	author = {Phillip P.A. Staniczenko and Prabu Sivasubramaniam and K. Blake Suttle and Richard G. Pearson},
+	editor = {Joshua Lawler},
+	title = {Linking macroecology and community ecology: refining predictions of species distributions using biotic interaction networks},
+	journal = {Ecology Letters}
+}
+
+@article{Gavish_2017,
+	doi = {10.1111/2041-210x.12731},
+	url = {https://doi.org/10.1111%2F2041-210x.12731},
+	year = 2017,
+	month = {feb},
+	publisher = {Wiley},
+	volume = {8},
+	number = {9},
+	pages = {1092--1102},
+	author = {Yoni Gavish and Charles J. Marsh and Mathias Kuemmerlen and Stefan Stoll and Peter Haase and William E. Kunin},
+	editor = {Robert Freckleton},
+	title = {Accounting for biotic interactions through alpha-diversity constraints in stacked species distribution models},
+	journal = {Methods in Ecology and Evolution}
+}
+
+@article{Gagnon_2020,
+	doi = {10.1111/1365-2664.13605},
+	url = {https://doi.org/10.1111%2F1365-2664.13605},
+	year = 2020,
+	month = {apr},
+	publisher = {Wiley},
+	volume = {57},
+	number = {6},
+	pages = {1161--1179},
+	author = {Karine Gagnon and Eli Rinde and Elizabeth G. T. Bengil and Laura Carugati and Marjolijn J. A. Christianen and Roberto Danovaro and Cristina Gambi and Laura L. Govers and Silvija Kipson and Lukas Meysick and Liina Pajusalu and {\.{I}}nci Tüney K{\i}z{\i}lkaya and Johan Koppel and Tjisse Heide and Marieke M. Katwijk and Christoffer Boström},
+	editor = {Rute Pinto},
+	title = {Facilitating foundation species: The potential for plant{\textendash}bivalve interactions to improve habitat restoration success},
+	journal = {Journal of Applied Ecology}
+}
+
+@article{Jankowska_2019,
+	doi = {10.1016/j.jembe.2018.10.004},
+	url = {https://doi.org/10.1016%2Fj.jembe.2018.10.004},
+	year = 2019,
+	month = {jan},
+	publisher = {Elsevier {BV}},
+	volume = {510},
+	pages = {54--63},
+	author = {Emilia Jankowska and Loïc N. Michel and Gilles Lepoint and Maria W{\l}odarska-Kowalczuk},
+	title = {Stabilizing effects of seagrass meadows on coastal water benthic food webs},
+	journal = {Journal of Experimental Marine Biology and Ecology}
+}
+
+@article{Yates_2018,
+	doi = {10.1016/j.tree.2018.08.001},
+	url = {https://doi.org/10.1016%2Fj.tree.2018.08.001},
+	year = 2018,
+	month = {oct},
+	publisher = {Elsevier {BV}},
+	volume = {33},
+	number = {10},
+	pages = {790--802},
+	author = {Katherine L. Yates and Phil J. Bouchet and M. Julian Caley and Kerrie Mengersen and Christophe F. Randin and Stephen Parnell and Alan H. Fielding and Andrew J. Bamford and Stephen Ban and A. M{\'{a}}rcia Barbosa and Carsten F. Dormann and Jane Elith and Clare B. Embling and Gary N. Ervin and Rebecca Fisher and Susan Gould and Roland F. Graf and Edward J. Gregr and Patrick N. Halpin and Risto K. Heikkinen and Stefan Heinänen and Alice R. Jones and Periyadan K. Krishnakumar and Valentina Lauria and Hector Lozano-Montes and Laura Mannocci and Camille Mellin and Mohsen B. Mesgaran and Elena Moreno-Amat and Sophie Mormede and Emilie Novaczek and Steffen Oppel and Guillermo Ortu{\~{n}}o Crespo and A. Townsend Peterson and Giovanni Rapacciuolo and Jason J. Roberts and Rebecca E. Ross and Kylie L. Scales and David Schoeman and Paul Snelgrove and Göran Sundblad and Wilfried Thuiller and Leigh G. Torres and Heroen Verbruggen and Lifei Wang and Seth Wenger and Mark J. Whittingham and Yuri Zharikov and Damaris Zurell and Ana M.M. Sequeira},
+	title = {Outstanding Challenges in the Transferability of Ecological Models},
+	journal = {Trends in Ecology {\&} Evolution}
+}
+
+@article{Bertness_1997,
+author = {Bertness, Mark D. and Leonard, George H.},
+title = {THE ROLE OF POSITIVE INTERACTIONS IN COMMUNITIES: LESSONS FROM INTERTIDAL HABITATS},
+journal = {Ecology},
+volume = {78},
+number = {7},
+pages = {1976-1989},
+keywords = {community ecology, distributional limits, group benefits, habitat amelioration, physical stress},
+doi = {10.1890/0012-9658(1997)078[1976:TROPII]2.0.CO;2},
+url = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/0012-9658%281997%29078%5B1976%3ATROPII%5D2.0.CO%3B2},
+eprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1890/0012-9658%281997%29078%5B1976%3ATROPII%5D2.0.CO%3B2},
+abstract = {Positive interactions that result from neighbors buffering one another from stressful conditions are predictably important community forces in physically stressful habitats. Here, we examine the generality of this hypothesis in marine intertidal communities. Intertidal communities have historically played a large role in the development of community ecology since they occur across pronounced physical gradients and are easily manipulated. Positive interactions, however, have not been emphasized in studies of intertidal communities. We first review studies of intertidal marsh plant communities that suggest that positive interactions play a dominant role in the structure and dynamics of these common assemblages. We then present the results of an experimental manipulation on New England rocky shores that suggests that group benefits are as important in maintaining the upper intertidal limits of dominant spaceholders on rocky shores as the negative forces of competition and predation are in maintaining lower distributional limits. We conclude by discussing the generality and implications of our results. We argue that biogeographic biases have limited appreciation of the role played by positive interactions in intertidal communities. Most of the work that has formed the foundation of marine intertidal ecology was done in cool temperate habitats, whereas positive interactions driven by the amelioration of thermal or desiccation stresses are likely more important in warmer climates. We further argue that many important positive feedbacks operate at large spatial scales, not conducive to experimental study, and thus have escaped critical attention and general acceptance. We suggest that recognizing the role of positive interactions in communities may be key to understanding population and community processes in physically stressful habitats, many large-scale landscape processes, and uncovering long-suspected linkages between biodiversity and community stability.},
+year = {1997}
+}
+
+@incollection{Gribben_2019,
+	doi = {10.1201/9780429026379-3},
+	url = {https://doi.org/10.1201%2F9780429026379-3},
+	year = 2019,
+	month = {aug},
+	publisher = {{CRC} Press},
+	pages = {127--168},
+	author = {Paul E. Gribben and Christine Angelini and Andrew H. Altieri and Melanie J. Bishop and Mads S. Thomsen and Fabio Bulleri},
+	title = {Facilitation Cascades in Marine Ecosystems: A Synthesis and Future Directions},
+	booktitle = {Oceanography and Marine Biology}
+}
+
+@article{Ashcroft_2017,
+	doi = {10.1111/gcb.13628},
+	url = {https://doi.org/10.1111%2Fgcb.13628},
+	year = 2017,
+	month = {feb},
+	publisher = {Wiley},
+	volume = {23},
+	number = {8},
+	pages = {2929--2940},
+	author = {Michael B. Ashcroft and Diana H. King and Ben Raymond and Johanna D. Turnbull and Jane Wasley and Sharon A. Robinson},
+	title = {Moving beyond presence and absence when examining changes in species distributions},
+	journal = {Global Change Biology}
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
+
+@comment{BibDesk Smart Groups{
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>conditions</key>
+		<array>
+			<dict>
+				<key>comparison</key>
+				<integer>2</integer>
+				<key>key</key>
+				<string>Keywords</string>
+				<key>value</key>
+				<string>Network analysis</string>
+				<key>version</key>
+				<string>1</string>
+			</dict>
+		</array>
+		<key>conjunction</key>
+		<integer>0</integer>
+		<key>group name</key>
+		<string>Network analysis</string>
+	</dict>
+	<dict>
+		<key>conditions</key>
+		<array>
+			<dict>
+				<key>comparison</key>
+				<integer>2</integer>
+				<key>key</key>
+				<string>Keywords</string>
+				<key>value</key>
+				<string>Network inference</string>
+				<key>version</key>
+				<string>1</string>
+			</dict>
+		</array>
+		<key>conjunction</key>
+		<integer>1</integer>
+		<key>group name</key>
+		<string>Network inference</string>
+	</dict>
+</array>
+</plist>
+}}
