@@ -1,4 +1,4 @@
-name: Create the pdf of the presnetation
+name: Presentation PDF
 
 on:
   push:
