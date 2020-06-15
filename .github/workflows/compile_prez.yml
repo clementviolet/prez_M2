@@ -15,6 +15,7 @@ jobs:
         with:
           root_file: prez.tex
           args: "-f -interaction=nonstopmode --file-line-error -lualatex"
+          post_compile: "latexmk -c"
       - uses: actions/upload-artifact@v2
         with:
           name: pdf
