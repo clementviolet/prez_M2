@@ -4,7 +4,7 @@
 ]{beamer}
 
 \usepackage{geometry}
-\geometry{paperwidth=160mm, paperheight=115mm}
+\geometry{paperwidth=160mm, paperheight=115mm, left = 5mm}
 
 \usepackage{polyglossia}
 \setmainlanguage[]{french}
@@ -69,7 +69,7 @@
   \section{Problématique \& méthodologie}
 
   \begin{frame}{Niche environnementale}
-	Capacité de persistance d'une espèce $\rightarrow$ niche à n-dimensions~\citep{Hutchinson_1957}.\\\vspace{2\baselineskip}
+	Capacité de persistance d'une espèce $\rightarrow$ niche à n-dimensions~\citep{Hutchinson_1957}\\\vspace{2\baselineskip}
 	\pause
 	\begin{figure}[t]
 		\begin{center}
@@ -113,7 +113,7 @@
 		\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\raggedright
 		Distribution statistique\strut
 		\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
-		Nombre de facteurs aléatoirse\strut
+		Nombre de facteurs aléatoires\strut
 		\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
 		Nombre de variables latentes\strut
 		\end{minipage}\tabularnewline
@@ -208,15 +208,15 @@
 	\end{frame}
 	
 	\begin{frame}{Cas d'étude}
-	Données faunistiques issues du \emph{REBENT} :~\citep{Boye_2019a}
+	Données faunistiques issues du \includegraphics[scale=0.2]{figs/LogoREBENT.png} :~\citep{Boye_2019a}
 	\begin{itemize}
-		\item Macrofaune benthique ($> 1\text{mm}$) $\rightarrow$ polychètes (96 taxa) ;
-		\item 8 ans de suivis + 23 sites (215 unités d'échantillonnages) ;
+		\item Macrofaune benthique ($> 1\text{mm}$) $\rightarrow$ polychètes (96 taxa)
+		\item 8 ans de suivis + 23 sites (215 unités d'échantillonnages)
 	\end{itemize}
 	Données environnementales 7 variables : \includegraphics[scale=0.2]{figs/noun_Hot.png}, \includegraphics[scale=0.2]{figs/noun_Wind.png}, \includegraphics[scale=0.2]{figs/noun_Salt.png}, \includegraphics[scale=0.2]{figs/noun_wave.png}, \includegraphics[scale=0.2]{figs/noun_sand.png}
 		\begin{figure}[t]
 		\begin{center}
-			\includegraphics[scale = 0.14]{figs/site_map.png} 
+			\includegraphics[scale = 0.08]{figs/site_map.png} 
 		\end{center}
 	\end{figure}
 	\end{frame}
@@ -226,13 +226,15 @@
 	\begin{frame}{Performances à l'échelle de l'espèce}
 	\begin{figure}[t]
 	\begin{center}
-		\includegraphics[scale =0.6]{figs/SR2-density-method-2.png}%
+		\includegraphics<1>[scale =0.6]{figs/SR2-density-method-2.png}%
+		\includegraphics<2>[scale =0.6]{figs/SR2-density-method-3.png}%
+		\includegraphics<3>[scale =0.6]{figs/SR2-density-method-4.png}%
 	\end{center}
 	\end{figure}
-	\pause
+	\pause\pause\pause
 	Mauvaise capacité de ces modèles à prédire l'abondance des espèces observées :
 		\begin{itemize}
-			\item \textcolor{green}{Meilleur modèle \emph{HMSC\_hier}} : $24 \leq \text{\emph{RMSE}} \leq 10^4$;
+			\item \textcolor{green}{Meilleur modèle \emph{HMSC\_hier}} : $24 \leq \text{\emph{RMSE}} \leq 10^4$
 			\item \textcolor{red}{Moins bon modèle \emph{GLLVM}} :  $1,25\times10^{31}\leq \text{\emph{RMSE}} \leq 1,09\times 10^{36}$
 		\end{itemize}
 	\end{frame}
@@ -279,17 +281,36 @@
 		\begin{center}
 			\includegraphics<1>[scale=0.07]{figs/expert-option-1-2.png}
 			\includegraphics<2>[scale=0.07]{figs/expert-option-2-2.png}
+			\includegraphics<3>[scale=0.07]{figs/expert-option-2-3.png}
 		\end{center}
 	\end{figure}
 	\end{frame}
 	
-	\begin{frame}{Coût de calcul}
-	Calculs réalisés par le supercalculateur de l'IFREMER DATARMOR.\vfill
-		\begin{figure}[t]
-		\begin{center}
-			\includegraphics[scale=0.7]{figs/DATARMOR.jpg}
-		\end{center}
-	\end{figure}
+	\section{Discussion \& conclusion}
+	\begin{frame}{Discussion}
+		\textbf{Mauvaise prédiction de l'abondance} $\rightarrow$ justifie la mise en place de seuil pour prédire l'occurrence\pause\vfill
+		\textbf{Bonne prédiction de l'occurrence} $\rightarrow$ variation spatio-temporelle de la richesse spécifique\pause\vfill
+		Effets aléatoires $\ggg$ Variables environnementales $\rightarrow$ transférabilité ?\pause\vfill
+		\textbf{Difficultés pour inférer des interactions} $\rightarrow$  association entre espèces ?
+	\end{frame}
+	
+	\begin{frame}{Perspectives}
+	Améliorer les modèles :\vspace{\baselineskip}\\
+	\begin{itemize}
+		\item Utiliser des données de traits et/ou phylogénétiques
+	\end{itemize}\pause\vspace{4\baselineskip}
+	Validation :
+	\begin{itemize}
+		\item Prédiction de l'abondance \textcolor{red}{\faClose}
+		\item Prédiction diversité $\alpha$ \textcolor{green}{\faCheckSquare}
+		\item Prédiction diversité $\beta$ \textcolor{blue}{\faQuestionCircle}
+	\end{itemize}
+	\quad\quad\quad$\rightarrow$ Analyses de trajectoires de communautés~\citep{De_Caceres_2019}
+	\end{frame}
+	
+	\begin{frame}{Perspectives}
+	Optimisation numérique indispensable pour des modèles plus compliqués.\vspace{\baselineskip}\\\pause
+	\quad\quad\quad$\rightarrow$ Calculs réalisés par DATARMOR.\vfill
 		\begin{longtable}[]{lcc}
 			\toprule
 			Modèle & Temps de calcul & RAM (Go)\tabularnewline
@@ -307,33 +328,27 @@
 			\bottomrule
 		\end{longtable}
 	
-	\end{frame}
-	
-	\section{Discussion \& conclusion}
-	\begin{frame}{Discussion}
-		Mauvaise prédiction de l'abondance $\rightarrow$ justifie la mise en place de seuil pour prédire l'occurrence.\pause\vspace{\baselineskip}\\
-		Bonne prédiction de l'occurrence \& variation spatio-temporelle de la richesse spécifique;\pause\vspace{\baselineskip}\\
-		Variance expliquée par effet aléatoires $++ \rightarrow$ transférabilité ?\pause\vspace{\baselineskip}\\
-		Choix du modèle : trade-off performance/coût de calcul.
-	\end{frame}
-	
-	\begin{frame}{Perspectives}
-	Améliorer les modèles :\vspace{\baselineskip}\\
-	Utiliser des données de traits et/ou phylogéniques\pause\vspace{\baselineskip}\\
-	Validation :
+	Choix du modèle : \textbf{trade-off}
 	\begin{itemize}
-		\item Prédiction de l'abondance \textcolor{red}{\faClose}
-		\item Prédiction diversité $\alpha$ \textcolor{green}{\faCheckSquare}
-		\item Prédiction diversité $\beta$ \textcolor{blue}{\faQuestionCircle}
+		\item Performances
+		\item Coûts de calcul
+		\item Flexibilité
 	\end{itemize}
-	$\rightarrow$ Analyses de trajectoires de communautés~\citep{De_Caceres_2019}.\pause\vspace{\baselineskip}\\
-	Optimisation numérique indispensable pour des modèles plus compliqués.
+	
 	\end{frame}
 	
 	\appendix
 	
 	\begin{frame}[standout]
 		Questions
+	\end{frame}
+	
+	\begin{frame}{Sites échantillonnés}
+	\begin{figure}[t]
+		\begin{center}
+			\includegraphics[scale =0.13]{figs/site_map3.png}%
+		\end{center}
+	\end{figure}
 	\end{frame}
 	
 	\begin{frame}{Effet variables environnementales}
@@ -347,16 +362,22 @@
 	\begin{frame}{Partionnement variance expliquée}
 		\begin{figure}[t]
 		\begin{center}
-			\includegraphics[scale =0.38]{figs/VP-HMSC-Var-Part-plot-1.png}%
-			\includegraphics[scale =0.38]{figs/VP-HMSC-Var-Part-plot-2.png}%
+			\includegraphics[scale =0.5]{figs/VP_reg_samp.png}%
+		\end{center}
+	\end{figure}
+		$\sigma^2$ variables environnementales : $0,0727\pm 0,061$\\
+		$\sigma^2$ effets aléatoires : $0,491\pm 0,239$
+	\end{frame}
+	
+	\begin{frame}{Inférence Réseau}
+		\begin{figure}[t]
+		\begin{center}
+			\includegraphics[scale =0.12]{figs/emtree.png}%
 		\end{center}
 	\end{figure}
 	\end{frame}
 	
-	
 	\begin{frame}[allowframebreaks]{Bibliographie}
-		\begin{tiny}
 			\bibliography{ref_interaction_inference.bib}
-		\end{tiny}
 	\end{frame}
 \end{document}
